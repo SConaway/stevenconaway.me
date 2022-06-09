@@ -44,7 +44,7 @@ export default function Index() {
 
           <div className="relative flex flex-col items-center justify-center w-full h-full p-4 bg-black/75">
             <div className="max-w-[40ch] text-center py-8">
-              <p className="mt-2 text-2xl font-bold text-slate-300">
+              <p className="mt-4 text-2xl font-bold text-slate-300">
                 Hi,{` `}
                 {/* <span className="mx-auto text-4xl font-bold text-slate-300 wave">
                   👋🏻
@@ -53,7 +53,7 @@ export default function Index() {
               <p className="text-2xl font-bold text-slate-300"> */}
                 I&apos;m
               </p>
-              <p className="mt-2 mb-4 text-6xl font-bold text-white">
+              <p className="mt-4 mb-4 text-6xl font-bold text-white">
                 Steven Conaway
               </p>
               <p className="mb-8 text-xl font-bold text-slate-300">
@@ -63,7 +63,7 @@ export default function Index() {
 
               <div className="border-slate-300 border-b w-full h-[1px]"></div>
 
-              <div className="flex flex-row justify-around mt-4">
+              <div className="flex flex-row justify-around mt-8">
                 <SocialIcon
                   icon={<FiMail />}
                   url="mailto:steven@stevenconaway.me"
