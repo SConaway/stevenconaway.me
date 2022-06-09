@@ -228,3 +228,4 @@ $RECYCLE.BIN/
 !.yarn/sdks
 !.yarn/versions
 .pnp.*
+.vercel
