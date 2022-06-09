@@ -525,17 +525,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:>=12":
+"@types/node@npm:*, @types/node@npm:>=12, @types/node@npm:^17.0.41":
   version: 17.0.41
   resolution: "@types/node@npm:17.0.41"
   checksum: ddaf9e7decb487850a9bbfeb670b41c9d35c5b1597c4c4f889419b65042d776e9041ed533c7afc1bac30cad1e9dcfd984085b4a35312efe8ea5eaf0bd36a8191
-  languageName: node
-  linkType: hard
-
-"@types/node@npm:^16.11.36":
-  version: 16.11.39
-  resolution: "@types/node@npm:16.11.39"
-  checksum: bc97b9773ac6b3194800f990b349fad7f66c6126dacef59291b10a2c8b6813d6f67f947b7e12a6c9952790f7065d576fe38355b8fe034a6af60f317cfc570f69
   languageName: node
   linkType: hard
 
@@ -587,7 +580,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/sharp@npm:^0":
+"@types/sharp@npm:^0.30.4":
   version: 0.30.4
   resolution: "@types/sharp@npm:0.30.4"
   dependencies:
@@ -5667,10 +5660,10 @@ __metadata:
   dependencies:
     "@commitlint/cli": ^17.0.2
     "@commitlint/config-conventional": ^17.0.2
-    "@types/node": ^16.11.36
+    "@types/node": ^17.0.41
     "@types/react": ^18.0.12
     "@types/react-dom": ^18.0.5
-    "@types/sharp": ^0
+    "@types/sharp": ^0.30.4
     "@typescript-eslint/eslint-plugin": ^5.27.1
     "@typescript-eslint/parser": ^5.27.1
     autoprefixer: ^10.4.7

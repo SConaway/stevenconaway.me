@@ -18,7 +18,9 @@
     "lint": "eslint --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\"",
     "format": "prettier --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\" --write",
     "postinstall": "husky install",
-    "c": "cz"
+    "c": "cz",
+    "upgrade:yarn": "yarn set version latest",
+    "upgrade": "yarn upgrade-interactive ; yarn upgrade:yarn"
   },
   "lint-staged": {
     "./src/**/*.{ts,js,jsx,tsx}": [
@@ -36,10 +38,10 @@
   "devDependencies": {
     "@commitlint/cli": "^17.0.2",
     "@commitlint/config-conventional": "^17.0.2",
-    "@types/node": "^16.11.36",
+    "@types/node": "^17.0.41",
     "@types/react": "^18.0.12",
     "@types/react-dom": "^18.0.5",
-    "@types/sharp": "^0",
+    "@types/sharp": "^0.30.4",
     "@typescript-eslint/eslint-plugin": "^5.27.1",
     "@typescript-eslint/parser": "^5.27.1",
     "autoprefixer": "^10.4.7",
