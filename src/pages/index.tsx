@@ -1,6 +1,8 @@
 // import { useState } from 'react';
 
-// import { FaBars } from 'react-icons/fa';
+import { FiMail, FiLinkedin, FiGithub, FiTwitter } from 'react-icons/fi';
+
+import SocialIcon from '@/components/SocialIcon';
 
 import Image from 'next/image';
 
@@ -29,35 +31,65 @@ export default function Index() {
         </nav>
       </header>
 
-      <main className="flex flex-col min-h-screen mt-6">
-        <div className="h-[70vh] relative mb-3">
+      <main className="flex flex-col items-center mt-6">
+        <div className="h-[80vh] w-full max-w-5xl relative mb-3">
           <Image
             alt="Mountains"
             src="/images/nd.jpg"
             layout="fill"
             objectFit="cover"
+            objectPosition="center 15%"
             quality={100}
           />
 
-          <div className="relative flex flex-col items-center justify-center w-full h-full p-4 bg-black/60">
+          <div className="relative flex flex-col items-center justify-center w-full h-full p-4 bg-black/75">
             <div className="max-w-[40ch] text-center py-8">
-              <p className="text-2xl font-bold text-slate-300">Hi, I&apos;m</p>
-              <p className="mt-4 mb-4 text-6xl font-bold text-white">
+              <p className="mt-2 text-2xl font-bold text-slate-300">
+                Hi,{` `}
+                {/* <span className="mx-auto text-4xl font-bold text-slate-300 wave">
+                  👋🏻
+                </span>
+              </p>
+              <p className="text-2xl font-bold text-slate-300"> */}
+                I&apos;m
+              </p>
+              <p className="mt-2 mb-4 text-6xl font-bold text-white">
                 Steven Conaway
               </p>
-              <p className="text-xl font-bold text-slate-300">
+              <p className="mb-8 text-xl font-bold text-slate-300">
                 I&apos;m a software developer and a sophomore at the University
                 of Notre Dame.
               </p>
+
+              <div className="border-slate-300 border-b w-full h-[1px]"></div>
+
+              <div className="flex flex-row justify-around mt-4">
+                <SocialIcon
+                  icon={<FiMail />}
+                  url="mailto:steven@stevenconaway.me"
+                  description="Email"
+                />
+
+                <SocialIcon
+                  icon={<FiLinkedin />}
+                  url="https://www.linkedin.com/in/steven-conaway/"
+                  description="LinkedIn"
+                />
+
+                <SocialIcon
+                  icon={<FiGithub />}
+                  url="https://github.com/SConaway"
+                  description="GitHub"
+                />
+
+                <SocialIcon
+                  icon={<FiTwitter />}
+                  url="https://twitter.com/StevenConaway4"
+                  description="Twitter"
+                />
+              </div>
             </div>
           </div>
-          {/* </div> */}
-
-          {/* <p className={bgText}>
-            Image Component
-            <br />
-            as a Background
-          </p> */}
         </div>
 
         <div className="mt-3 text-white">
