@@ -40,6 +40,7 @@ export default function Index() {
             objectFit="cover"
             objectPosition="center 15%"
             quality={100}
+            priority
           />
 
           <div className="relative flex flex-col items-center justify-center w-full h-full p-4 bg-black/75">
