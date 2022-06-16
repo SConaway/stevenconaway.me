@@ -39,11 +39,11 @@ export default function Index() {
             layout="fill"
             objectFit="cover"
             objectPosition="center 15%"
-            quality={100}
+            quality={70}
             priority
           />
 
-          <div className="relative flex flex-col items-center justify-center w-full h-full p-4 bg-black/75">
+          <div className="relative flex flex-col items-center justify-center w-full h-full min-h-[80vh] p-4 bg-black/75">
             <div className="max-w-[40ch] text-center py-8">
               <p className="mt-4 text-2xl font-bold text-slate-300">
                 Hi,{` `}
