@@ -32,7 +32,7 @@ export default function Index() {
       </header>
 
       <main className="flex flex-col items-center mt-6">
-        <div className="h-[80vh] w-full max-w-5xl relative mb-3">
+        <div className="min-h-[80vh] w-full max-w-5xl relative mb-3">
           <Image
             alt="Mountains"
             src="/images/nd.jpg"
