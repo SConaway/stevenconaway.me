@@ -16,11 +16,18 @@ export default function Index() {
         <h1 className="mx-2 text-3xl font-bold text-white">Steven Conaway</h1>
 
         <nav className="flex flex-row items-center justify-center sm:flex-rw">
-          <a href="#header" className="my-1 mr-4 text-white sm:my-0">
+          <a
+            href="#main"
+            // onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            className="my-1 mr-4 text-white sm:my-0"
+          >
             Home
           </a>
           <a href="#about" className="my-1 mr-4 text-white sm:my-0">
             About
+          </a>
+          <a href="#tech-stack" className="my-1 mr-4 text-white sm:my-0">
+            Tech Stack
           </a>
           <a href="#projects" className="my-1 mr-4 text-white sm:my-0">
             Projects
@@ -31,7 +38,7 @@ export default function Index() {
         </nav>
       </header>
 
-      <main className="flex flex-col items-center mt-6">
+      <main className="flex flex-col items-center mt-6 scroll-smooth" id="main">
         <div className="min-h-[80vh] w-full max-w-5xl relative mb-3">
           <Image
             alt="Mountains"
@@ -43,7 +50,7 @@ export default function Index() {
             priority
           />
 
-          <div className="relative flex flex-col items-center justify-center w-full h-full min-h-[80vh] p-4 bg-black/75">
+          <div className="relative flex flex-col items-center justify-center w-full min-h-[80vh] p-4 bg-black/75">
             <div className="max-w-[40ch] text-center py-8">
               <p className="mt-4 text-2xl font-bold text-slate-300">
                 Hi,{` `}
@@ -93,7 +100,119 @@ export default function Index() {
           </div>
         </div>
 
-        <div className="mt-3 text-white">
+        <div
+          className="w-full min-h-[30vh] flex flex-col items-center justify-center py-10 px-6 mt-3 bg-zinc-700 text-zinc-50"
+          id="about"
+        >
+          <div className="w-full max-w-[60ch]">
+            <h2 className="text-3xl font-bold text-center text-white">
+              About Me
+            </h2>
+
+            <hr className="my-6" />
+
+            <h3 className="text-xl font-bold text-white">Some Fun Facts:</h3>
+
+            <ul className="pl-8 my-2 list-disc">
+              <li>I grew up in Los Angeles.</li>
+              <li>
+                I now live in Idaho! (well, at least, for summers, since I go to
+                school at Notre Dame [in Indiana])
+              </li>
+              {/* more? */}
+            </ul>
+
+            <hr className="my-6" />
+
+            <h3 className="text-xl font-bold text-white">Things I like:</h3>
+            <ol className="pl-8 my-2 list-decimal">
+              <li>Coding (obviously)</li>
+              <li>Music</li>
+              {/* add music widget there? */}
+              <li>Singing (choir and musicals)</li>
+              {/* more? */}
+            </ol>
+          </div>
+        </div>
+
+        <div
+          className="flex flex-col items-center justify-center w-full px-6 py-10 mt-3 bg-zinc-800 text-zinc-100"
+          id="tech-stack"
+        >
+          <div className="w-full max-w-[60ch]">
+            <h2 className="text-3xl font-bold text-center text-white">
+              Tech Stack
+            </h2>
+
+            <hr className="my-6" />
+
+            <h3 className="text-xl font-bold text-white">Hardware:</h3>
+            <ol className="pl-8 my-2 list-decimal">
+              <li>
+                2021 16&rdquo; MacBook Pro (used for basically everything)
+              </li>
+              <li>
+                2020 11&rdquo; iPad Pro (used for school stuff and art things)
+              </li>
+            </ol>
+
+            <hr className="my-6" />
+
+            <h3 className="text-xl font-bold text-white">Software:</h3>
+            <ol className="pl-8 my-2 list-decimal">
+              <li className="my-2">
+                <a
+                  className="underline transition-colors underline-offset-2 decoration-zinc-200 hover:decoration-zinc-400 hover:text-zinc-400"
+                  href="https://www.visualstudio.com/"
+                >
+                  Visual Studio Code
+                </a>
+              </li>
+              <li className="my-2">
+                <a
+                  className="underline transition-colors underline-offset-2 decoration-zinc-200 hover:decoration-zinc-400 hover:text-zinc-400"
+                  href="https://www.typescriptlang.org/"
+                >
+                  TypeScript
+                </a>
+              </li>
+              <li className="my-2">
+                <a
+                  className="underline transition-colors underline-offset-2 decoration-zinc-200 hover:decoration-zinc-400 hover:text-zinc-400"
+                  href="https://vercel.com/"
+                >
+                  Vercel
+                </a>
+              </li>
+              <li className="my-2">
+                <a
+                  className="underline transition-colors underline-offset-2 decoration-zinc-200 hover:decoration-zinc-400 hover:text-zinc-400"
+                  href="https://reactjs.org/"
+                >
+                  React
+                </a>
+              </li>
+              <li className="my-2">
+                <a
+                  className="underline transition-colors underline-offset-2 decoration-zinc-200 hover:decoration-zinc-400 hover:text-zinc-400"
+                  href="https://nextjs.org/"
+                >
+                  Next.js
+                </a>
+              </li>
+              <li className="my-2">
+                <a
+                  className="underline transition-colors underline-offset-2 decoration-zinc-200 hover:decoration-zinc-400 hover:text-zinc-400"
+                  href="https://reactnative.dev/"
+                >
+                  React Native
+                </a>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        {/* <div className="mt-3 text-white">
           <p>
             <span>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
@@ -126,7 +245,7 @@ export default function Index() {
               numquam. Nam?
             </span>
           </p>
-        </div>
+        </div> */}
       </main>
     </div>
   );
