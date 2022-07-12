@@ -1,13 +1,12 @@
-import { useState } from 'react';
-
 import { FiMail, FiLinkedin, FiGithub, FiTwitter } from 'react-icons/fi';
 
 import SocialIcon from '@/components/SocialIcon';
 
+import { InferGetServerSidePropsType, GetServerSidePropsContext } from 'next';
 import Image from 'next/image';
 
 import { getCurrentTrack } from '@/lib/spotify';
-import { Song } from '@/types';
+// import { Song } from '@/types';
 
 function NavBar() {
   return (
@@ -31,11 +30,9 @@ function NavBar() {
   );
 }
 
-interface Props {
-  currentSong: Song | null;
-}
-
-export default function Index({ currentSong }: Props) {
+export default function Index({
+  currentSong,
+}: InferGetServerSidePropsType<typeof getServerSideProps>) {
   return (
     <div className="pb-6 bg-zinc-900 scroll-smooth">
       <header
@@ -273,15 +270,13 @@ export default function Index({ currentSong }: Props) {
 }
 
 // server-side rendering
-export async function getServerSideProps() {
-  await getCurrentTrack();
+export async function getServerSideProps({ res }: GetServerSidePropsContext) {
+  res.setHeader(
+    'Cache-Control',
+    'public, s-maxage=10, stale-while-revalidate=59',
+  );
 
   const currentSong = await getCurrentTrack();
-  // {
-  //   title: '124',
-  //   artist: 'Abc',
-  //   isPlaying: true,
-  // };
 
   return { props: { currentSong } };
 }
