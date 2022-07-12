@@ -1,4 +1,4 @@
-// import { useState } from 'react';
+import { useState } from 'react';
 
 import { FiMail, FiLinkedin, FiGithub, FiTwitter } from 'react-icons/fi';
 
@@ -6,36 +6,45 @@ import SocialIcon from '@/components/SocialIcon';
 
 import Image from 'next/image';
 
-export default function Index() {
+import { getCurrentTrack } from '@/lib/spotify';
+import { Song } from '@/types';
+
+function NavBar() {
   return (
-    <div className="bg-zinc-900 scroll-smooth">
+    <nav className="flex flex-row items-center justify-center text-white sm:flex-rw">
+      <a href="#main" className="my-1 mr-4 sm:my-0">
+        Home
+      </a>
+      <a href="#about" className="my-1 mr-4 sm:my-0">
+        About
+      </a>
+      <a href="#tech-stack" className="my-1 mr-4 sm:my-0">
+        Tech Stack
+      </a>
+      <a href="#projects" className="my-1 mr-4 sm:my-0">
+        Projects
+      </a>
+      <a href="#contact" className="my-1 mr-4 sm:my-0 last:mr-2">
+        Contact
+      </a>
+    </nav>
+  );
+}
+
+interface Props {
+  currentSong: Song | null;
+}
+
+export default function Index({ currentSong }: Props) {
+  return (
+    <div className="pb-6 bg-zinc-900 scroll-smooth">
       <header
         className="sticky top-0 z-50 flex flex-col items-center justify-center p-2 text-center sm:flex-row sm:justify-between bg-zinc-800"
         id="header"
       >
         <h1 className="mx-2 text-3xl font-bold text-white">Steven Conaway</h1>
 
-        <nav className="flex flex-row items-center justify-center sm:flex-rw">
-          <a
-            href="#main"
-            // onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="my-1 mr-4 text-white sm:my-0"
-          >
-            Home
-          </a>
-          <a href="#about" className="my-1 mr-4 text-white sm:my-0">
-            About
-          </a>
-          <a href="#tech-stack" className="my-1 mr-4 text-white sm:my-0">
-            Tech Stack
-          </a>
-          <a href="#projects" className="my-1 mr-4 text-white sm:my-0">
-            Projects
-          </a>
-          <a href="#contact" className="my-1 mr-4 text-white sm:my-0 last:mr-2">
-            Contact
-          </a>
-        </nav>
+        <NavBar />
       </header>
 
       <main className="flex flex-col items-center mt-6 scroll-smooth" id="main">
@@ -105,13 +114,11 @@ export default function Index() {
           id="about"
         >
           <div className="w-full max-w-[60ch]">
-            <h2 className="text-3xl font-bold text-center text-white">
-              About Me
-            </h2>
+            <h2 className="text-3xl font-bold text-center">About Me</h2>
 
             <hr className="my-6" />
 
-            <h3 className="text-xl font-bold text-white">Some Fun Facts:</h3>
+            <h3 className="text-xl font-bold">Some Fun Facts:</h3>
 
             <ul className="pl-8 my-2 list-disc">
               <li>I grew up in Los Angeles.</li>
@@ -124,11 +131,27 @@ export default function Index() {
 
             <hr className="my-6" />
 
-            <h3 className="text-xl font-bold text-white">Things I like:</h3>
+            <h3 className="text-xl font-bold">Things I like:</h3>
             <ol className="pl-8 my-2 list-decimal">
               <li>Coding (obviously)</li>
-              <li>Music</li>
-              {/* add music widget there? */}
+              <li>
+                Music
+                {currentSong && (
+                  <span className="text-sm">
+                    {` `}
+                    <a href={currentSong.url}>
+                      {currentSong.isPlaying
+                        ? ` (Right now, I'm listening `
+                        : ` (Most recently, I was listening `}
+                      to{` `}
+                      <span className="underline transition-colors underline-offset-2 decoration-zinc-200 hover:decoration-zinc-400 hover:text-zinc-400">
+                        <i>{currentSong.title}</i> by {currentSong.artist}
+                      </span>
+                      )
+                    </a>
+                  </span>
+                )}
+              </li>
               <li>Singing (choir and musicals)</li>
               {/* more? */}
             </ol>
@@ -140,13 +163,11 @@ export default function Index() {
           id="tech-stack"
         >
           <div className="w-full max-w-[60ch]">
-            <h2 className="text-3xl font-bold text-center text-white">
-              Tech Stack
-            </h2>
+            <h2 className="text-3xl font-bold text-center">Tech Stack</h2>
 
             <hr className="my-6" />
 
-            <h3 className="text-xl font-bold text-white">Hardware:</h3>
+            <h3 className="text-xl font-bold">Hardware:</h3>
             <ol className="pl-8 my-2 list-decimal">
               <li>
                 2021 16&rdquo; MacBook Pro (used for basically everything)
@@ -158,7 +179,7 @@ export default function Index() {
 
             <hr className="my-6" />
 
-            <h3 className="text-xl font-bold text-white">Software:</h3>
+            <h3 className="text-xl font-bold">Software:</h3>
             <ol className="pl-8 my-2 list-decimal">
               <li className="my-2">
                 <a
@@ -249,4 +270,18 @@ export default function Index() {
       </main>
     </div>
   );
+}
+
+// server-side rendering
+export async function getServerSideProps() {
+  await getCurrentTrack();
+
+  const currentSong = await getCurrentTrack();
+  // {
+  //   title: '124',
+  //   artist: 'Abc',
+  //   isPlaying: true,
+  // };
+
+  return { props: { currentSong } };
 }
