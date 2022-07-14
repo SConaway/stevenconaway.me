@@ -181,7 +181,7 @@ export default function Index({
               <li className="my-2">
                 <a
                   className="underline transition-colors underline-offset-2 decoration-zinc-200 hover:decoration-zinc-400 hover:text-zinc-400"
-                  href="https://www.visualstudio.com/"
+                  href="https://code.visualstudio.com/"
                 >
                   Visual Studio Code
                 </a>
