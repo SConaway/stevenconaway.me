@@ -20,8 +20,8 @@ function NavBar() {
       <a href="#tech-stack" className="my-1 mr-4 sm:my-0">
         Tech Stack
       </a>
-      <a href="#projects" className="my-1 mr-4 sm:my-0">
-        Projects
+      <a href="#experience" className="my-1 mr-4 sm:my-0">
+        Experience
       </a>
       <a href="#contact" className="my-1 mr-4 sm:my-0 last:mr-2">
         Contact
@@ -36,7 +36,7 @@ export default function Index({
   return (
     <div className="pb-6 bg-zinc-900 scroll-smooth">
       <header
-        className="sticky top-0 z-50 flex flex-col items-center justify-center p-2 text-center sm:flex-row sm:justify-between bg-zinc-800"
+        className="sticky top-0 z-50 flex flex-col items-center justify-center p-2 text-center sm:flex-row sm:justify-between bg-zinc-900"
         id="header"
       >
         <h1 className="mx-2 text-3xl font-bold text-white">Steven Conaway</h1>
@@ -65,14 +65,14 @@ export default function Index({
                 </span>
               </p>
               <p className="text-2xl font-bold text-slate-300"> */}
-                I&apos;m
+                I’m
               </p>
               <p className="mt-4 mb-4 text-6xl font-bold text-white">
                 Steven Conaway
               </p>
               <p className="mb-8 text-xl font-bold text-slate-300">
-                I&apos;m a software developer and a sophomore at the University
-                of Notre Dame.
+                I’m a software developer and a sophomore at the University of
+                Notre Dame.
               </p>
 
               <div className="border-slate-300 border-b w-full h-[1px]"></div>
@@ -138,7 +138,7 @@ export default function Index({
                     {` `}
                     <a href={currentSong.url}>
                       {currentSong.isPlaying
-                        ? ` (Right now, I'm listening `
+                        ? ` (Right now, I’m listening `
                         : ` (Most recently, I was listening `}
                       to{` `}
                       <span className="underline transition-colors underline-offset-2 decoration-zinc-200 hover:decoration-zinc-400 hover:text-zinc-400">
@@ -166,12 +166,8 @@ export default function Index({
 
             <h3 className="text-xl font-bold">Hardware:</h3>
             <ol className="pl-8 my-2 list-decimal">
-              <li>
-                2021 16&rdquo; MacBook Pro (used for basically everything)
-              </li>
-              <li>
-                2020 11&rdquo; iPad Pro (used for school stuff and art things)
-              </li>
+              <li>2021 16" MacBook Pro (used for basically everything)</li>
+              <li>2020 11" iPad Pro (used for school stuff and art things)</li>
             </ol>
 
             <hr className="my-6" />
@@ -230,40 +226,42 @@ export default function Index({
           </div>
         </div>
 
-        {/* <div className="mt-3 text-white">
-          <p>
-            <span>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
-              dolor quasi quia laborum ratione, temporibus illo placeat ipsa,
-              tenetur earum autem necessitatibus pariatur! Quo, consequatur
-              nostrum tenetur ex sit unde.
-            </span>
-            <span>
-              Sit enim dolorem esse officia inventore repudiandae odio,
-              laudantium animi ipsa reprehenderit repellat magni sunt tenetur
-              asperiores natus reiciendis totam iste vitae aspernatur iusto quam
-              dolores corrupti. Reiciendis, tempora voluptates.
-            </span>
-            <span>
-              Numquam odit harum nisi unde consectetur perspiciatis, temporibus
-              quo odio maiores officia molestias voluptatem nobis voluptatibus
-              sunt quia incidunt? Aliquid quasi deserunt, hic voluptate commodi
-              animi quod doloremque fuga perspiciatis.
-            </span>
-            <span>
-              Aspernatur ex facilis, blanditiis et consectetur voluptates,
-              voluptatem illo minus aliquid perspiciatis illum dolorem obcaecati
-              incidunt asperiores minima iure explicabo velit ducimus totam
-              molestiae vel earum doloremque recusandae odit! Amet?
-            </span>
-            <span>
-              Perferendis omnis sed in modi assumenda? Similique earum vitae quo
-              minus alias sint? Deserunt harum totam dolorum voluptatibus rerum
-              accusantium deleniti explicabo ullam! Hic quae voluptas optio modi
-              numquam. Nam?
-            </span>
-          </p>
-        </div> */}
+        <div
+          className="flex flex-col items-center justify-center w-full px-6 py-10 mt-3 bg-zinc-800 text-zinc-100"
+          id="experience"
+        >
+          <div className="w-full max-w-[60ch]">
+            <h2 className="text-3xl font-bold text-center">Experience</h2>
+
+            <hr className="my-6" />
+
+            <p>
+              I have worked as a{' '}
+              <strong>Lead Mobile Application Developer</strong> for{' '}
+              <a href="https://we2link.com/">We2Link</a> since August 2019. In
+              this role, I have gained significant experience developing
+              cross-platform mobile apps with React Native. As a team lead, I
+              have also led the creation of tutorial videos introducing new team
+              members to our project.
+            </p>
+
+            <hr className="my-6" />
+
+            <p>
+              I have also worked as a <strong>Tech Instructor</strong> for the
+              East Los Angeles Community Youth Center. I taught several classes,
+              including "How to Build your own Arduino-based Smart Car",
+              "Introduction to Drones", and "LEGO Robotics", to underserved
+              elementary- and middle-school students. Our Robotics team won
+              second place in the First Annual Boyle Heights Robotics
+              Competition. Also, developed the curriculum currently in use for
+              the "How to Build your own Arduino-based Smart Car" class. In
+              November 2020, I began teaching “Introductory Robotics
+              Programming”, a virtual class teaching students basic programming
+              skills by use of VEXCode VR.
+            </p>
+          </div>
+        </div>
       </main>
     </div>
   );

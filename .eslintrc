@@ -42,7 +42,22 @@
         "@typescript-eslint/no-use-before-define": [1],
         "@typescript-eslint/no-explicit-any": "off",
         "@typescript-eslint/no-var-requires": "off",
-        "@typescript-eslint/quotes": "off"
+        "@typescript-eslint/quotes": "off",
+        "react/no-unescaped-entities": [
+          "error",
+          {
+            "forbid": [
+              {
+                "char": ">",
+                "alternatives": ["&gt;"]
+              },
+              {
+                "char": "}",
+                "alternatives": ["&#125;"]
+              }
+            ]
+          }
+        ]
       }
     }
   ]
