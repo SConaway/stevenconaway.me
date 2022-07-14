@@ -34,9 +34,22 @@ export const getCurrentTrack = async () => {
       return null;
     }
 
+    let artist = '';
+
+    if (playing.body.item.artists.length === 1)
+      artist = playing.body.item.artists[0].name;
+    else if (playing.body.item.artists.length === 2)
+      artist = `${playing.body.item.artists[0].name} and ${playing.body.item.artists[1].name}`;
+    else if (playing.body.item.artists.length > 2) {
+      artist = playing.body.item.artists
+        .map((a: any) => a.name)
+        .join(', ')
+        .replace(/,(?=[^,]*$)/, ', and');
+    }
+
     const track: Song = {
       title: playing.body.item.name,
-      artist: playing.body.item.artists[0].name,
+      artist,
       url: `https://song.link/s/${playing.body.item.id}`,
       isPlaying: playing.body.is_playing,
     };
