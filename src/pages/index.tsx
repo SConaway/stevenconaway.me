@@ -5,6 +5,8 @@ import SocialIcon from '@/components/SocialIcon';
 import { InferGetServerSidePropsType, GetServerSidePropsContext } from 'next';
 import Image from 'next/image';
 
+import NDImage from '../../public/images/nd.jpg';
+
 import { getCurrentTrack } from '@/lib/spotify';
 // import { Song } from '@/types';
 
@@ -48,12 +50,13 @@ export default function Index({
         <div className="min-h-[80vh] w-full max-w-5xl relative mb-3">
           <Image
             alt="Mountains"
-            src="/images/nd.jpg"
+            src={NDImage}
             layout="fill"
             objectFit="cover"
             objectPosition="center 15%"
             quality={70}
             priority
+            placeholder="blur"
           />
 
           <div className="relative flex flex-col items-center justify-center w-full min-h-[80vh] p-4 bg-black/75">

@@ -28,7 +28,7 @@ export const getCurrentTrack = async () => {
 
     const playing = await spotifyApi.getMyCurrentPlayingTrack();
 
-    console.log(JSON.stringify(playing.body, null, 2));
+    // console.log(JSON.stringify(playing.body, null, 2));
 
     if (playing.body.currently_playing_type !== `track`) {
       return null;
