@@ -3,7 +3,7 @@ import { FiMail, FiLinkedin, FiGithub, FiTwitter } from 'react-icons/fi';
 import SocialIcon from '@/components/SocialIcon';
 
 import { InferGetServerSidePropsType, GetServerSidePropsContext } from 'next';
-import Image from 'next/image';
+import Image from 'next/future/image';
 
 import NDImage from '../../public/images/nd.jpg';
 
@@ -36,7 +36,7 @@ export default function Index({
   currentSong,
 }: InferGetServerSidePropsType<typeof getServerSideProps>) {
   return (
-    <div className="pb-6 bg-zinc-900 scroll-smooth">
+    <div className="pb-6 bg-zinc-900 scroll-smooth wrap">
       <header
         className="sticky top-0 z-50 flex flex-col items-center justify-center p-2 text-center sm:flex-row sm:justify-between bg-zinc-900"
         id="header"
@@ -47,19 +47,21 @@ export default function Index({
       </header>
 
       <main className="flex flex-col items-center mt-6 scroll-smooth" id="main">
-        <div className="min-h-[80vh] w-full max-w-5xl relative mb-3">
+        <div className="min-h-[80vh] w-full max-w-5xl mb-3 relative">
           <Image
-            alt="Mountains"
             src={NDImage}
-            layout="fill"
-            objectFit="cover"
-            objectPosition="center 15%"
+            alt="Mountains"
+            className="absolute inset-0 block object-cover w-full h-full"
+            style={{
+              objectPosition: 'center 15%',
+            }}
             quality={70}
             priority
             placeholder="blur"
+            sizes="(min-width: 1024px) 1024px, 100vw"
           />
 
-          <div className="relative flex flex-col items-center justify-center w-full min-h-[80vh] p-4 bg-black/75">
+          <div className="relative flex flex-col items-center justify-center w-full h-full min-h-[80vh] p-4 bg-black/[.65]">
             <div className="max-w-[40ch] text-center py-8">
               <p className="mt-4 text-2xl font-bold text-slate-300">
                 Hi,{` `}
