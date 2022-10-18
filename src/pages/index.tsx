@@ -237,34 +237,76 @@ export default function Index({
         >
           <div className="w-full max-w-[60ch]">
             <h2 className="text-3xl font-bold text-center">Experience</h2>
-
             <hr className="my-6" />
-
             <p>
-              I have worked as a{' '}
-              <strong>Lead Mobile Application Developer</strong> for{' '}
-              <a href="https://we2link.com/">We2Link</a> since August 2019. In
-              this role, I have gained significant experience developing
-              cross-platform mobile apps with React Native. As a team lead, I
-              have also led the creation of tutorial videos introducing new team
-              members to our project.
+              Over Summer 2022, I served as a{' '}
+              <strong>Resident Counselor and Course Facilitator</strong> with
+              the University of Notre Dame's Pre-College Programs. Some of my
+              duties included the following:
+            </p>
+            <ul className="pl-8 my-2 list-disc">
+              <li>
+                Ensured the well-being of rising high school juniors and seniors
+                living in a residential college setting.
+              </li>
+              <li>
+                Managed online classes as per Notre Dame’s Protection of
+                Children policies.
+              </li>
+              <li>
+                Advised students and faculty on use of technologies such as
+                Google Suite and Zoom.
+              </li>
+              <li>
+                Coordinated various activities and social events, both in-person
+                and virtually.
+              </li>
+              <li>
+                Served as a mentor, university representative, and resource for
+                prospective students.
+              </li>
+            </ul>
+            <hr className="my-6" />
+            <p>
+              I worked as a <strong>Lead Mobile Application Developer</strong>{' '}
+              for <a href="https://we2link.com/">We2Link</a> from August 2019 to
+              August 2022. In this role, I did the following:{' '}
+            </p>
+            <ul className="pl-8 my-2 list-disc">
+              <li>
+                Gained significant experience developing cross-platform mobile
+                apps with React Native.
+              </li>
+              <li>
+                Led the creation of tutorial videos introducing new team members
+                to our project.
+              </li>
+            </ul>
+            <hr className="my-6" />
+            <p>
+              I also worked as a <strong>Tech Instructor</strong> for the East
+              Los Angeles Community Youth Center.
             </p>
 
-            <hr className="my-6" />
-
-            <p>
-              I have also worked as a <strong>Tech Instructor</strong> for the
-              East Los Angeles Community Youth Center. I taught several classes,
-              including "How to Build your own Arduino-based Smart Car",
-              "Introduction to Drones", and "LEGO Robotics", to underserved
-              elementary- and middle-school students. Our Robotics team won
-              second place in the First Annual Boyle Heights Robotics
-              Competition. Also, developed the curriculum currently in use for
-              the "How to Build your own Arduino-based Smart Car" class. In
-              November 2020, I began teaching “Introductory Robotics
-              Programming”, a virtual class teaching students basic programming
-              skills by use of VEXCode VR.
-            </p>
+            <ul className="pl-8 my-2 list-disc">
+              <li>
+                I taught several classes, including "How to Build your own
+                Arduino-based Smart Car", "Introduction to Drones", and "LEGO
+                Robotics", to underserved elementary- and middle-school
+                students.
+              </li>
+              <li>
+                Our Robotics team won second place in the First Annual Boyle
+                Heights Robotics Competition. Also, developed the curriculum
+                currently in use for the "How to Build your own Arduino-based
+                Smart Car" class.
+              </li>
+              <li>
+                In November 2020, I began teaching “Introductory Robotics
+                Programming”, a virtual class teaching students basic
+                programming skills by use of VEXCode VR.
+              </li>
+            </ul>
           </div>
         </div>
       </main>
