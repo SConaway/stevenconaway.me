@@ -12,7 +12,7 @@ import { getCurrentTrack } from '@/lib/spotify';
 
 function NavBar() {
   return (
-    <nav className="flex flex-row items-center justify-center text-white sm:flex-rw">
+    <nav className="flex flex-row flex-wrap items-center justify-center text-white">
       <a href="#main" className="my-1 mr-4 sm:my-0">
         Home
       </a>
@@ -36,7 +36,7 @@ export default function Index({
   currentSong,
 }: InferGetServerSidePropsType<typeof getServerSideProps>) {
   return (
-    <div className="pb-6 bg-zinc-900 scroll-smooth wrap">
+    <div className="pb-3 bg-zinc-900 scroll-smooth wrap">
       <header
         className="sticky top-0 z-50 flex flex-col items-center justify-center p-2 text-center sm:flex-row sm:justify-between bg-zinc-900"
         id="header"
@@ -53,7 +53,7 @@ export default function Index({
             alt="Mountains"
             className="absolute inset-0 block object-cover w-full h-full"
             style={{
-              objectPosition: 'center 15%',
+              objectPosition: 'center 10%',
             }}
             quality={70}
             priority
@@ -190,9 +190,25 @@ export default function Index({
               <li className="my-2">
                 <a
                   className="underline transition-colors underline-offset-2 decoration-zinc-200 hover:decoration-zinc-400 hover:text-zinc-400"
+                  href="https://python.org/"
+                >
+                  Python
+                </a>
+              </li>
+              <li className="my-2">
+                <a
+                  className="underline transition-colors underline-offset-2 decoration-zinc-200 hover:decoration-zinc-400 hover:text-zinc-400"
                   href="https://www.typescriptlang.org/"
                 >
                   TypeScript
+                </a>
+              </li>
+              <li className="my-2">
+                <a
+                  className="underline transition-colors underline-offset-2 decoration-zinc-200 hover:decoration-zinc-400 hover:text-zinc-400"
+                  href="https://www.ecma-international.org/publications-and-standards/standards/ecma-262/"
+                >
+                  ES2022 (JavaScript)
                 </a>
               </li>
               <li className="my-2">
@@ -225,6 +241,14 @@ export default function Index({
                   href="https://reactnative.dev/"
                 >
                   React Native
+                </a>
+              </li>
+              <li className="my-2">
+                <a
+                  className="underline transition-colors underline-offset-2 decoration-zinc-200 hover:decoration-zinc-400 hover:text-zinc-400"
+                  href="https://git-scm.com/"
+                >
+                  Git
                 </a>
               </li>
             </ol>
@@ -310,6 +334,15 @@ export default function Index({
           </div>
         </div>
       </main>
+
+      <footer className="flex flex-col items-center justify-center w-full px-6 mt-3 bg-zinc-900 text-zinc-500">
+        <div className="w-full max-w-[60ch]">
+          {/* copyright */}
+          <p className="text-center">
+            © {new Date().getFullYear()} Steven Conaway
+          </p>
+        </div>
+      </footer>
     </div>
   );
 }
