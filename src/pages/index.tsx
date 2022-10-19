@@ -6,8 +6,11 @@ import { InferGetServerSidePropsType, GetServerSidePropsContext } from 'next';
 import Image from 'next/future/image';
 
 import NDImage from '../../public/images/nd.jpg';
+import WebImage from '../../public/images/nd.jpg';
+import OLCImage from '../../public/images/olc.png';
 
 import { getCurrentTrack } from '@/lib/spotify';
+import Project from '@/components/Project';
 // import { Song } from '@/types';
 
 function NavBar() {
@@ -24,6 +27,9 @@ function NavBar() {
       </a>
       <a href="#experience" className="my-1 mr-4 sm:my-0">
         Experience
+      </a>
+      <a href="#projects" className="my-1 mr-4 sm:my-0">
+        Projects
       </a>
       <a href="#contact" className="my-1 mr-4 sm:my-0 last:mr-2">
         Contact
@@ -331,6 +337,42 @@ export default function Index({
                 programming skills by use of VEXCode VR.
               </li>
             </ul>
+          </div>
+        </div>
+
+        <div
+          className="flex flex-col items-center justify-center w-full px-6 py-10 mt-3 bg-zinc-800 text-zinc-100"
+          id="projects"
+        >
+          <div className="w-full max-w-[60ch]">
+            <h2 className="text-3xl font-bold text-center">Projects</h2>
+            <hr className="my-6" />
+            <p>
+              I have worked on a variety of projects, both personal and
+              professional. Here are some of my favorites:
+            </p>
+          </div>
+
+          <div className="w-full max-w-[100ch]">
+            <div className="flex flex-row flex-wrap items-center justify-center mt-6">
+              <Project
+                title="Personal Website"
+                description="This website! I built it using Next.js, TypeScript, and Tailwind CSS."
+                link="https://stevenconaway.me"
+                image={WebImage}
+                height={WebImage.height}
+                width={WebImage.width}
+              />
+
+              <Project
+                title="Outdoor Lighting Controller"
+                description="An ESP8266-based controller for outdoor lighting. I built it using ESPHome and Home Assistant."
+                link="https://github.com/SConaway/Outdoor-Lighting-Controller.git"
+                image={OLCImage}
+                height={OLCImage.height}
+                width={OLCImage.width}
+              />
+            </div>
           </div>
         </div>
       </main>
