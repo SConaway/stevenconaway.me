@@ -23,6 +23,9 @@ const Project = (props: Props) => {
           src={props.image}
           alt={props.title}
           className="rounded-lg"
+          quality={70}
+          placeholder="blur"
+          sizes="300px"
           // className="absolute inset-0 block object-cover w-full h-full"
         />
 

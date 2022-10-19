@@ -56,7 +56,7 @@ export default function Index({
         <div className="min-h-[80vh] w-full max-w-5xl mb-3 relative">
           <Image
             src={NDImage}
-            alt="Mountains"
+            alt="Notre Dame Golden Dome"
             className="absolute inset-0 block object-cover w-full h-full"
             style={{
               objectPosition: 'center 10%',
