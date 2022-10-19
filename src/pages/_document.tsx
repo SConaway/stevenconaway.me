@@ -7,7 +7,7 @@ import React from 'react';
 class Document extends NextDocument {
   render() {
     return (
-      <Html lang="en" className="bg-zinc-800">
+      <Html lang="en" className="bg-zinc-800 scroll-smooth">
         <Head />
         <body>
           <Main />

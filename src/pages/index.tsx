@@ -42,7 +42,7 @@ export default function Index({
   currentSong,
 }: InferGetServerSidePropsType<typeof getServerSideProps>) {
   return (
-    <div className="pb-3 bg-zinc-900 scroll-smooth wrap">
+    <div className="pb-3 bg-zinc-900 wrap">
       <header
         className="sticky top-0 z-50 flex flex-col items-center justify-center p-2 text-center sm:flex-row sm:justify-between bg-zinc-900"
         id="header"
@@ -52,7 +52,7 @@ export default function Index({
         <NavBar />
       </header>
 
-      <main className="flex flex-col items-center mt-6 scroll-smooth" id="main">
+      <main className="flex flex-col items-center mt-6" id="main">
         <div className="min-h-[80vh] w-full max-w-5xl mb-3 relative">
           <Image
             src={NDImage}
@@ -71,11 +71,6 @@ export default function Index({
             <div className="max-w-[40ch] text-center py-8">
               <p className="mt-4 text-2xl font-bold text-slate-300">
                 Hi,{` `}
-                {/* <span className="mx-auto text-4xl font-bold text-slate-300 wave">
-                  👋🏻
-                </span>
-              </p>
-              <p className="text-2xl font-bold text-slate-300"> */}
                 I’m
               </p>
               <p className="mt-4 mb-4 text-6xl font-bold text-white">

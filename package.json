@@ -3,7 +3,7 @@
   "description": "My portfolio website",
   "version": "1.0.0",
   "private": true,
-  "author": "Steven Conaway <me@stevenconaway.me>",
+  "author": "Steven Conaway <steven@stevenconaway.me>",
   "license": "MIT",
   "keywords": [
     "nextjs",
