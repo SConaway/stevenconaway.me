@@ -16,7 +16,7 @@ const Project = (props: Props) => {
   return (
     <a href={props.link} target="_blank" rel="noopener noreferrer">
       <div
-        className="max-w-[300px] mx-4 my-2 p-4 group bg-black/20 hover:bg-black/40 hover:scale-110 transition-all hover:shadow-lg rounded-lg text-center relative"
+        className="max-w-[300px] mx-4 my-2 p-4 group bg-black/20 hover:bg-black/40 hover:scale-105 transition-all hover:shadow-lg rounded-lg text-center relative"
         // style={{ aspectRatio: `${props.width}/${props.height}` }}
       >
         <Image
