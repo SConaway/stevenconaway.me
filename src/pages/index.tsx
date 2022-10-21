@@ -31,7 +31,7 @@ function NavBar() {
       <a href="#projects" className="my-1 mr-4 sm:my-0">
         Projects
       </a>
-      <a href="#contact" className="my-1 mr-4 sm:my-0 last:mr-2">
+      <a href="#contact" className="my-1 mr-4 sm:my-0 last:mr-0">
         Contact
       </a>
     </nav>
@@ -43,16 +43,20 @@ export default function Index({
 }: InferGetServerSidePropsType<typeof getServerSideProps>) {
   return (
     <div className="pb-3 bg-zinc-900 wrap">
-      <header
-        className="sticky top-0 z-50 flex flex-col items-center justify-center p-2 text-center sm:flex-row sm:justify-between bg-zinc-900"
-        id="header"
-      >
-        <h1 className="mx-2 text-3xl font-bold text-white">Steven Conaway</h1>
+      <div className="sticky top-0 z-50 p-2 bg-zinc-900">
+        <header
+          className="flex flex-col items-center justify-center max-w-5xl mx-auto sm:flex-row sm:justify-between"
+          id="header"
+        >
+          <h1 className="mr-2 text-3xl font-bold text-white">Steven Conaway</h1>
 
-        <NavBar />
-      </header>
+          <NavBar />
+        </header>
+      </div>
 
-      <main className="flex flex-col items-center mt-6" id="main">
+      <hr className="w-full border-t-2 border-zinc-800 my--2" />
+
+      <main className="flex flex-col items-center mt-4" id="main">
         <div className="min-h-[80vh] w-full max-w-5xl mb-3 relative">
           <Image
             src={NDImage}
