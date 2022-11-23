@@ -2,7 +2,6 @@ import { FiMail, FiLinkedin, FiGithub, FiTwitter } from 'react-icons/fi';
 
 import SocialIcon from '@/components/SocialIcon';
 
-import { InferGetServerSidePropsType, GetServerSidePropsContext } from 'next';
 import Image from 'next/image';
 
 import NDImage from '../../public/images/nd.jpg';
@@ -38,9 +37,9 @@ function NavBar() {
   );
 }
 
-export default function Index({
-  currentSong,
-}: InferGetServerSidePropsType<typeof getServerSideProps>) {
+export default async function Index() {
+  const currentTrack = await getCurrentTrack();
+
   return (
     <div className="pb-3 bg-zinc-900 wrap">
       <div className="sticky top-0 z-50 p-2 bg-zinc-900">
@@ -143,19 +142,19 @@ export default function Index({
               <li>Coding (obviously)</li>
               <li>
                 Music
-                {currentSong && (
+                {currentTrack && (
                   <span className="text-sm">
                     {` `}
-                    <a href={currentSong.url}>
-                      {currentSong.isPlaying
-                        ? ` (Right now, I’m listening `
-                        : ` (Most recently, I was listening `}
-                      to{` `}
+                    {currentTrack.isPlaying
+                      ? ` (Right now, I’m listening `
+                      : ` (Most recently, I was listening `}
+                    to{` `}
+                    <a href={currentTrack.url}>
                       <span className="underline transition-colors underline-offset-2 decoration-zinc-200 hover:decoration-zinc-400 hover:text-zinc-400">
-                        <i>{currentSong.title}</i> by {currentSong.artist}
+                        <i>{currentTrack.title}</i> by {currentTrack.artist}
                       </span>
-                      )
                     </a>
+                    {')'}
                   </span>
                 )}
               </li>
@@ -386,16 +385,4 @@ export default function Index({
       </footer>
     </div>
   );
-}
-
-// server-side rendering
-export async function getServerSideProps({ res }: GetServerSidePropsContext) {
-  res.setHeader(
-    'Cache-Control',
-    'public, s-maxage=10, stale-while-revalidate=59',
-  );
-
-  const currentSong = await getCurrentTrack();
-
-  return { props: { currentSong } };
 }
