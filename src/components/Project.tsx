@@ -1,6 +1,6 @@
 import { FiLink } from 'react-icons/fi';
 
-import Image, { ImageProps } from 'next/future/image';
+import Image, { ImageProps } from 'next/image';
 
 type Props = {
   title: string;

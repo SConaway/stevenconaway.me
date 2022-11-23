@@ -3,7 +3,7 @@ import { FiMail, FiLinkedin, FiGithub, FiTwitter } from 'react-icons/fi';
 import SocialIcon from '@/components/SocialIcon';
 
 import { InferGetServerSidePropsType, GetServerSidePropsContext } from 'next';
-import Image from 'next/future/image';
+import Image from 'next/image';
 
 import NDImage from '../../public/images/nd.jpg';
 import WebImage from '../../public/images/nd.jpg';
