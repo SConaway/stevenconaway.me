@@ -39,6 +39,7 @@ function NavBar() {
 
 export default async function Index() {
   const currentTrack = await getCurrentTrack();
+  console.log('`\\` currentTrack:', currentTrack);
 
   return (
     <div className="pb-3 bg-zinc-900 wrap">
