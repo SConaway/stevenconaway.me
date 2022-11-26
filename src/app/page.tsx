@@ -5,8 +5,9 @@ import SocialIcon from '@/components/SocialIcon';
 import Image from 'next/image';
 
 import NDImage from '../../public/images/nd.jpg';
-import WebImage from '../../public/images/nd.jpg';
+import WebImage from '../../public/images/website.png';
 import OLCImage from '../../public/images/olc.png';
+import ELAImage from '../../public/images/ela.jpg';
 
 import { getCurrentTrack } from '@/lib/spotify';
 import Project from '@/components/Project';
@@ -352,7 +353,7 @@ export default async function Index() {
             </p>
           </div>
 
-          <div className="w-full max-w-[100ch]">
+          <div className="w-full max-w-[75ch]">
             <div className="flex flex-row flex-wrap items-center justify-center mt-6">
               <Project
                 title="Personal Website"
@@ -361,6 +362,8 @@ export default async function Index() {
                 image={WebImage}
                 height={WebImage.height}
                 width={WebImage.width}
+                // rendered via chrome as a 600x315 image and a lot of
+                // modifications to the text spacing
               />
 
               <Project
@@ -370,6 +373,15 @@ export default async function Index() {
                 image={OLCImage}
                 height={OLCImage.height}
                 width={OLCImage.width}
+              />
+
+              <Project
+                title="CircuitPython-based Sensor Board"
+                description="A drone-mounted PCB with air quality sensors based on an Adafruit Feather running CircuitPython."
+                link="https://github.com/ELAScience/AQ-drone"
+                image={ELAImage}
+                height={ELAImage.height}
+                width={ELAImage.width}
               />
             </div>
           </div>
