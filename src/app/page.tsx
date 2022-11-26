@@ -387,3 +387,5 @@ export default async function Index() {
     </div>
   );
 }
+
+export const revalidate = 0;
