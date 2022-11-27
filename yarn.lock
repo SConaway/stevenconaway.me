@@ -6629,12 +6629,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"spotify-web-api-node@npm:^5.0.2":
+"spotify-web-api-node@npm:5.0.2":
   version: 5.0.2
   resolution: "spotify-web-api-node@npm:5.0.2"
   dependencies:
     superagent: ^6.1.0
   checksum: 437c806332de20dce19ebf24917c8e46020e12fcf421649d9dc8147c14ddd0882cb862051c71beb0c6dbf2adbb28784b6f39076bcc0ce938823300b48dac884a
+  languageName: node
+  linkType: hard
+
+"spotify-web-api-node@patch:spotify-web-api-node@npm%3A5.0.2#./.yarn/patches/spotify-web-api-node-npm-5.0.2-56949ace62.patch::locator=stevenconaway.me%40workspace%3A.":
+  version: 5.0.2
+  resolution: "spotify-web-api-node@patch:spotify-web-api-node@npm%3A5.0.2#./.yarn/patches/spotify-web-api-node-npm-5.0.2-56949ace62.patch::version=5.0.2&hash=fc67c3&locator=stevenconaway.me%40workspace%3A."
+  dependencies:
+    superagent: ^6.1.0
+  checksum: 5bb089d1138bd87371fbc3c6f5f625414307693442e07cba53a7b8ae4fd0325ef6a36664f3c28c6b8c5fcfa11b744d9e0d64888d31bf00c89d1ff49e907ab216
   languageName: node
   linkType: hard
 

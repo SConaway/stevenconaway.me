@@ -1,0 +1,22 @@
+diff --git a/src/server-methods.js b/src/server-methods.js
+index 812a79ce7237803df1b5060625e1b9a70342d916..da5a610453655ac992dac027e8de76b9b3b735f9 100644
+--- a/src/server-methods.js
++++ b/src/server-methods.js
+@@ -44,7 +44,7 @@ module.exports = {
+       .withHeaders({
+         Authorization:
+           'Basic ' +
+-          new Buffer(
++          new Buffer.from(
+             this.getClientId() + ':' + this.getClientSecret()
+           ).toString('base64'),
+         'Content-Type' : 'application/x-www-form-urlencoded'        
+@@ -95,7 +95,7 @@ module.exports = {
+       .withHeaders({
+         Authorization:
+           'Basic ' +
+-          new Buffer(
++          new Buffer.from(
+             this.getClientId() + ':' + this.getClientSecret()
+           ).toString('base64'),
+           'Content-Type' : 'application/x-www-form-urlencoded'

@@ -74,5 +74,8 @@
     "hooks": {
       "prepare-commit-msg": "exec < /dev/tty && npx cz --hook || true"
     }
+  },
+  "resolutions": {
+    "spotify-web-api-node@^5.0.2": "patch:spotify-web-api-node@npm%3A5.0.2#./.yarn/patches/spotify-web-api-node-npm-5.0.2-56949ace62.patch"
   }
 }
