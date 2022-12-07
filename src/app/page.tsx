@@ -16,19 +16,19 @@ import Project from '@/components/Project';
 function NavBar() {
   return (
     <nav className="flex flex-row flex-wrap items-center justify-center text-white">
-      <a href="#main" className="my-1 mr-4 sm:my-0">
+      <a href="#main" className="my-1 mr-4 sm:my-0 last:mr-0">
         Home
       </a>
-      <a href="#about" className="my-1 mr-4 sm:my-0">
+      <a href="#about" className="my-1 mr-4 sm:my-0 last:mr-0">
         About
       </a>
-      <a href="#tech-stack" className="my-1 mr-4 sm:my-0">
+      <a href="#tech-stack" className="my-1 mr-4 sm:my-0 last:mr-0">
         Tech Stack
       </a>
-      <a href="#experience" className="my-1 mr-4 sm:my-0">
+      <a href="#experience" className="my-1 mr-4 sm:my-0 last:mr-0">
         Experience
       </a>
-      <a href="#projects" className="my-1 mr-4 sm:my-0">
+      <a href="#projects" className="my-1 mr-4 sm:my-0 last:mr-0">
         Projects
       </a>
       {/* <a href="#contact" className="my-1 mr-4 sm:my-0 last:mr-0">
