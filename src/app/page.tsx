@@ -31,9 +31,9 @@ function NavBar() {
       <a href="#projects" className="my-1 mr-4 sm:my-0">
         Projects
       </a>
-      <a href="#contact" className="my-1 mr-4 sm:my-0 last:mr-0">
+      {/* <a href="#contact" className="my-1 mr-4 sm:my-0 last:mr-0">
         Contact
-      </a>
+      </a> */}
     </nav>
   );
 }
