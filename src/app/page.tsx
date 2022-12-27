@@ -12,6 +12,7 @@ import NDImage from '../../public/images/nd.jpg';
 import WebImage from '../../public/images/website.png';
 import OLCImage from '../../public/images/olc.png';
 import ELAImage from '../../public/images/ela.jpg';
+import M5TimelapseImage from '../../public/images/m5timelapse.png';
 
 import Project from '@/components/Project';
 import { Song } from '@/types';
@@ -402,6 +403,15 @@ export default function Index() {
                 image={ELAImage}
                 height={ELAImage.height}
                 width={ELAImage.width}
+              />
+
+              <Project
+                title="m5stack-timelapse"
+                description="A timelapse camera built on an M5Stack built using Arduino, NodeJS, and bash scripting."
+                link="https://github.com/SConaway/m5stack-timelapse"
+                image={M5TimelapseImage}
+                height={M5TimelapseImage.height}
+                width={M5TimelapseImage.width}
               />
             </div>
           </div>
