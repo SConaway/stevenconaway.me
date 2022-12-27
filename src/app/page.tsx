@@ -1,3 +1,7 @@
+'use client';
+
+import { useEffect, useState } from 'react';
+
 import { FiMail, FiLinkedin, FiGithub, FiTwitter } from 'react-icons/fi';
 
 import SocialIcon from '@/components/SocialIcon';
@@ -9,9 +13,8 @@ import WebImage from '../../public/images/website.png';
 import OLCImage from '../../public/images/olc.png';
 import ELAImage from '../../public/images/ela.jpg';
 
-import { getCurrentTrack } from '@/lib/spotify';
 import Project from '@/components/Project';
-// import { Song } from '@/types';
+import { Song } from '@/types';
 
 function NavBar() {
   return (
@@ -38,9 +41,26 @@ function NavBar() {
   );
 }
 
-export default async function Index() {
-  const currentTrack = await getCurrentTrack();
+export default function Index() {
+  const [currentTrack, setCurrentTrack] = useState<Song | null>(null);
+
   console.log('`\\` currentTrack:', currentTrack);
+
+  // get song
+  useEffect(() => {
+    const getSong = async () => {
+      // get song from api
+      const json = await fetch('/api/currentlyPlaying');
+      const data = (await json.json()) as
+        | { data: Song; success: true }
+        | { success: false }; // include this to make sure the data is correct
+
+      // set song
+      if (data.success) setCurrentTrack(data.data);
+    };
+
+    getSong();
+  }, []);
 
   return (
     <div className="pb-3 bg-zinc-900 wrap">
@@ -144,7 +164,7 @@ export default async function Index() {
               <li>Coding (obviously)</li>
               <li>
                 Music
-                {currentTrack && (
+                {currentTrack && currentTrack.title && (
                   <span className="text-sm">
                     {` `}
                     {currentTrack.isPlaying
@@ -399,5 +419,3 @@ export default async function Index() {
     </div>
   );
 }
-
-export const revalidate = 0;

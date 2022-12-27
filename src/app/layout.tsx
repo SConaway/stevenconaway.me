@@ -16,8 +16,8 @@ export default function RootLayout({
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <link rel="icon" href="/favicon.ico" key="shortcutIcon" />
-        <link rel="shortcut icon" href="/favicon.ico" key="shortcutIcon" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="shortcut icon" href="/favicon.ico" />
         {/* <link rel="manifest" href="/manifest.json" /> */}
       </head>
       <body>{children}</body>
