@@ -87,7 +87,7 @@ export default function Index() {
             style={{
               objectPosition: 'center 10%',
             }}
-            quality={70}
+            quality={20}
             priority
             placeholder="blur"
             sizes="(min-width: 1024px) 1024px, 100vw"

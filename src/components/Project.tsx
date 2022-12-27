@@ -23,7 +23,7 @@ const Project = (props: Props) => {
           src={props.image}
           alt={props.title}
           className="rounded-lg group-hover:brightness-[.4] transition"
-          quality={70}
+          quality={40}
           placeholder="blur"
           sizes="300px"
           // className="absolute inset-0 block object-cover w-full h-full"
