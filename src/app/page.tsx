@@ -1,10 +1,7 @@
-'use client';
-
-import { useEffect, useState } from 'react';
-
 import { FiMail, FiLinkedin, FiGithub, FiTwitter } from 'react-icons/fi';
 
 import SocialIcon from '@/components/SocialIcon';
+import CurrentlyPlaying from '@/components/CurrentlyPlaying';
 
 import Image from 'next/image';
 
@@ -17,7 +14,6 @@ import MCWebImage from '../../public/images/mcweb.png';
 import RNCCDImage from '../../public/images/rnccd.png';
 
 import Project from '@/components/Project';
-import { Song } from '@/types';
 
 function NavBar() {
   return (
@@ -45,26 +41,6 @@ function NavBar() {
 }
 
 export default function Index() {
-  const [currentTrack, setCurrentTrack] = useState<Song | null>(null);
-
-  console.log('`\\` currentTrack:', currentTrack);
-
-  // get song
-  useEffect(() => {
-    const getSong = async () => {
-      // get song from api
-      const json = await fetch('/api/currentlyPlaying');
-      const data = (await json.json()) as
-        | { data: Song; success: true }
-        | { success: false }; // include this to make sure the data is correct
-
-      // set song
-      if (data.success) setCurrentTrack(data.data);
-    };
-
-    getSong();
-  }, []);
-
   return (
     <div className="pb-3 bg-zinc-900 wrap">
       <div className="sticky top-0 z-50 p-2 bg-zinc-900">
@@ -167,21 +143,7 @@ export default function Index() {
               <li>Coding (obviously)</li>
               <li>
                 Music
-                {currentTrack && currentTrack.title && (
-                  <span className="text-sm">
-                    {` `}
-                    {currentTrack.isPlaying
-                      ? ` (Right now, I’m listening `
-                      : ` (Most recently, I was listening `}
-                    to{` `}
-                    <a href={currentTrack.url}>
-                      <span className="underline transition-colors underline-offset-2 decoration-zinc-200 hover:decoration-zinc-400 hover:text-zinc-400">
-                        <i>{currentTrack.title}</i> by {currentTrack.artist}
-                      </span>
-                    </a>
-                    {')'}
-                  </span>
-                )}
+                <CurrentlyPlaying />
               </li>
               <li>Singing (choir and musicals)</li>
               {/* more? */}
