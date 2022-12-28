@@ -19,6 +19,24 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" />
         <link rel="shortcut icon" href="/favicon.ico" />
         {/* <link rel="manifest" href="/manifest.json" /> */}
+        <meta name="description" content="Steven Conaway's portfolio website" />
+
+        <meta
+          property="og:title"
+          key="title"
+          content="Steven Conaway's portfolio website"
+        />
+        <meta
+          property="og:description"
+          key="description"
+          content="Steven Conaway's portfolio website"
+        />
+        <meta
+          property="og:image"
+          key="image"
+          content="https://stevenconaway.me/images/og.jpg"
+        />
+        <meta property="og:url" key="url" content="https://stevenconaway.me" />
       </head>
       <body>{children}</body>
     </html>
