@@ -400,7 +400,7 @@ export default function Index() {
         </div>
       </main>
 
-      <footer className="flex flex-col items-center justify-center w-full px-6 mt-3 bg-zinc-900 text-zinc-500">
+      <footer className="flex flex-col items-center justify-center w-full px-6 mt-3 bg-zinc-900 text-zinc-300">
         <div className="w-full max-w-[60ch]">
           {/* copyright */}
           <p className="text-center">
@@ -412,7 +412,7 @@ export default function Index() {
             <p className="mr-2">Contact me at:</p>
             <a
               href="mailto:steven@stevenconaway.me"
-              className="hover:text-zinc-400"
+              className="special-underline-zinc-300"
             >
               steven@stevenconaway.me
             </a>

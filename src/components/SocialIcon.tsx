@@ -4,17 +4,18 @@ type Props = {
   description: string;
 };
 
-const SocialIcon = (props: Props) => {
+const SocialIcon = ({ icon, url, description }: Props) => {
   return (
     <div className="p-2 text-4xl transition-transform border border-solid rounded-full hover:scale-110 text-slate-300 border-slate-300 hover:border-slate-500 hover:text-slate-500">
       <a
-        href={props.url}
+        href={url}
         className=""
         // open on new tab
         target="_blank"
         rel="noopener noreferrer"
+        aria-label={description}
       >
-        {props.icon}
+        {icon}
       </a>
     </div>
   );

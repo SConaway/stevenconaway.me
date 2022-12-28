@@ -13,3 +13,21 @@ body {
     overscroll-behavior: auto;
   }
 } */
+
+/* Underline styles */
+a.special-underline-zinc-300 {
+  @apply block relative;
+}
+
+/* Fade in */
+a.special-underline-zinc-300::after {
+  @apply bg-zinc-300 absolute bottom-0 left-0 w-full content-[''] h-0.5 transition-all duration-300;
+  /* this would break the animation when using tailwind */
+  transform: scale(0);
+  transform-origin: center;
+}
+
+a.special-underline-zinc-300:hover::after,
+a.special-underline-zinc-300:focus::after {
+  transform: scale(1);
+}
