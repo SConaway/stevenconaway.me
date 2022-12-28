@@ -409,7 +409,7 @@ export default function Index() {
 
               <Project
                 title="m5stack-timelapse"
-                description="A timelapse camera built on an M5Stack built using Arduino, NodeJS, and bash scripting."
+                description="An ESP32-based M5Stack timelapse camera built using Arduino, NodeJS, and bash scripting."
                 link="https://github.com/SConaway/m5stack-timelapse"
                 image={M5TimelapseImage}
                 height={M5TimelapseImage.height}
