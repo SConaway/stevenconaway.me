@@ -13,6 +13,8 @@ import WebImage from '../../public/images/website.png';
 import OLCImage from '../../public/images/olc.png';
 import ELAImage from '../../public/images/ela.jpg';
 import M5TimelapseImage from '../../public/images/m5timelapse.png';
+import MCWebImage from '../../public/images/mcweb.png';
+import RNCCDImage from '../../public/images/rnccd.png';
 
 import Project from '@/components/Project';
 import { Song } from '@/types';
@@ -374,8 +376,8 @@ export default function Index() {
             </p>
           </div>
 
-          <div className="w-full max-w-[75ch]">
-            <div className="flex flex-row flex-wrap items-center justify-center mt-6">
+          <div className="w-full max-w-[1000px]">
+            <div className="flex flex-row flex-wrap items-stretch justify-center mt-6">
               <Project
                 title="Personal Website"
                 description="This website! I built it using Next.js, TypeScript, and Tailwind CSS."
@@ -413,6 +415,24 @@ export default function Index() {
                 height={M5TimelapseImage.height}
                 width={M5TimelapseImage.width}
               />
+
+              <Project
+                title="MCWeb"
+                description="A web-based Minecraft server management tool built using React, NodeJS, and Express."
+                link="https://github.com/SConaway/mcweb"
+                image={MCWebImage}
+                height={MCWebImage.height}
+                width={MCWebImage.width}
+              />
+
+              <Project
+                title="react-native-credit-card-display"
+                description="An interactive React Native component for displaying credit card information."
+                link="https://github.com/SConaway/react-native-credit-card-display"
+                image={RNCCDImage}
+                height={RNCCDImage.height}
+                width={RNCCDImage.width}
+              />
             </div>
           </div>
         </div>
@@ -424,6 +444,17 @@ export default function Index() {
           <p className="text-center">
             © {new Date().getFullYear()} Steven Conaway
           </p>
+
+          {/* add contact info */}
+          <div className="flex flex-row items-center justify-center">
+            <p className="mr-2">Contact me at:</p>
+            <a
+              href="mailto:steven@stevenconaway.me"
+              className="hover:text-zinc-400"
+            >
+              steven@stevenconaway.me
+            </a>
+          </div>
         </div>
       </footer>
     </div>
