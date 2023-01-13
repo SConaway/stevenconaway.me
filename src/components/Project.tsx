@@ -14,15 +14,15 @@ type Props = {
 // display image with title, then on hover, display description
 const Project = (props: Props) => {
   return (
-    <div
-      className="max-w-[300px] m-2 p-3 group bg-black/20 hover:bg-black/40 hover:scale-105 transition-all hover:shadow-lg rounded-lg text-center"
-      // style={{ aspectRatio: `${props.width}/${props.height}` }}
+    <a
+      href={props.link}
+      target="_blank"
+      rel="noopener noreferrer"
+      // className="flex flex-col h-full"
     >
-      <a
-        href={props.link}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="flex flex-col h-full"
+      <div
+        className="max-w-[300px] m-2 p-3 group bg-black/20 hover:bg-black/40 hover:scale-105 transition-all hover:shadow-lg rounded-lg text-center relative"
+        // style={{ aspectRatio: `${props.width}/${props.height}` }}
       >
         <Image
           src={props.image}
@@ -41,11 +41,12 @@ const Project = (props: Props) => {
         </div>
 
         {/* link icon! */}
-        <div className="absolute top-0 left-0 flex items-center justify-center w-full h-full text-transparent transition group-hover:text-gray-300">
+        {/* center in parent */}
+        <div className="absolute inset-0 flex items-center justify-center text-transparent transition group-hover:text-gray-300">
           <FiLink className="text-3xl" />
         </div>
-      </a>
-    </div>
+      </div>
+    </a>
   );
 };
 
