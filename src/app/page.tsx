@@ -254,6 +254,24 @@ export default function Index() {
             <h2 className="text-3xl font-bold text-center">Experience</h2>
             <hr className="my-6" />
             <p>
+              During the Spring 2023 semester at Notre Dame, I have served as a{' '}
+              <strong>Teaching Assistant</strong> for the course,{' '}
+              <strong>Logic Design and Sequential Circuits</strong>. Some of my
+              duties include the following:
+            </p>
+            <ul className="pl-8 my-2 list-disc">
+              <li>
+                Providing one-on-one support and feedback to students at weekly
+                office hours.
+              </li>
+              <li>
+                Co-Leading Studio Sessions where students work on lab
+                assignments.
+              </li>
+              <li>Grading weekly homework assignments and exams.</li>
+            </ul>
+            <hr className="my-6" />
+            <p>
               Over Summer 2022, I served as a{' '}
               <strong>Resident Counselor and Course Facilitator</strong> with
               the University of Notre Dame's Pre-College Programs. Some of my
