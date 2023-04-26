@@ -81,7 +81,7 @@ export default function Index() {
                 Steven Conaway
               </p>
               <p className="mb-8 text-xl font-bold text-slate-300">
-                I’m a software developer and a sophomore at the University of
+                I’m a Software Developer and a Sophomore at the University of
                 Notre Dame.
               </p>
 
@@ -261,8 +261,8 @@ export default function Index() {
             </p>
             <ul className="pl-8 my-2 list-disc">
               <li>
-                Providing one-on-one support and feedback to students at weekly
-                office hours.
+                Providing one-on-one support and feedback to sophomore students
+                at weekly office hours.
               </li>
               <li>
                 Co-Leading Studio Sessions where students work on lab
@@ -272,15 +272,15 @@ export default function Index() {
             </ul>
             <hr className="my-6" />
             <p>
-              Over Summer 2022, I served as a{' '}
-              <strong>Resident Counselor and Course Facilitator</strong> with
-              the University of Notre Dame's Pre-College Programs. Some of my
-              duties included the following:
+              During Summer 2022, I served as a{' '}
+              <strong>Resident Counselor and Course Facilitator</strong> for the
+              University of Notre Dame's Pre-College Programs. Some of my
+              responsibilities included the following:
             </p>
             <ul className="pl-8 my-2 list-disc">
               <li>
-                Ensured the well-being of rising high school juniors and seniors
-                living in a residential college setting.
+                Ensured the well-being of 20 rising high school juniors and
+                seniors living in a residential college setting.
               </li>
               <li>
                 Managed online classes as per Notre Dame’s Protection of
@@ -296,14 +296,14 @@ export default function Index() {
               </li>
               <li>
                 Served as a mentor, university representative, and resource for
-                prospective students.
+                450+ prospective students.
               </li>
             </ul>
             <hr className="my-6" />
             <p>
               I worked as a <strong>Lead Mobile Application Developer</strong>{' '}
               for <a href="https://we2link.com/">We2Link</a> from August 2019 to
-              August 2022. In this role, I did the following:{' '}
+              August 2022. In this role, I:
             </p>
             <ul className="pl-8 my-2 list-disc">
               <li>
@@ -311,8 +311,8 @@ export default function Index() {
                 apps with React Native.
               </li>
               <li>
-                Led the creation of tutorial videos introducing new team members
-                to our project.
+                Led the creation of a series of 12 tutorial videos introducing
+                new team members to our project.
               </li>
             </ul>
             <hr className="my-6" />
@@ -323,7 +323,7 @@ export default function Index() {
 
             <ul className="pl-8 my-2 list-disc">
               <li>
-                I taught several classes, including "How to Build your own
+                Taught several classes, including "How to Build your own
                 Arduino-based Smart Car", "Introduction to Drones", and "LEGO
                 Robotics", to underserved elementary- and middle-school
                 students.
@@ -335,8 +335,8 @@ export default function Index() {
                 Smart Car" class.
               </li>
               <li>
-                In November 2020, I began teaching “Introductory Robotics
-                Programming”, a virtual class teaching students basic
+                In November 2020, during COVID, I began teaching “Introductory
+                Robotics Programming”, a virtual class teaching students basic
                 programming skills by use of VEXCode VR.
               </li>
             </ul>
@@ -352,7 +352,7 @@ export default function Index() {
             <hr className="my-6" />
             <p>
               I have worked on a variety of projects, both personal and
-              professional. Here are some of my favorites:
+              professional. These are some of my favorites:
             </p>
           </div>
 
