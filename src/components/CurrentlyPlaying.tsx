@@ -16,10 +16,11 @@ export default function CurrentlyPlaying() {
       const json = await fetch('/api/currentlyPlaying');
       const data = (await json.json()) as
         | { data: Song; success: true }
-        | { success: false }; // include this to make sure the data is correct
+        | { success: false; error: string }; // include this to make sure the data is correct
 
       // set song
       if (data.success) setCurrentTrack(data.data);
+      else console.log('error fetching song:', data.error);
     };
 
     getSong();

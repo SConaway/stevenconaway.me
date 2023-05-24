@@ -10,9 +10,12 @@ const currentlyPlayingAPI = async (
     'public, s-maxage=10, stale-while-revalidate=59',
   );
 
-  const currentTrack = await getCurrentTrack();
-
-  res.status(200).json({ success: true, data: currentTrack });
+  try {
+    const currentTrack = await getCurrentTrack();
+    res.status(200).json({ success: true, data: currentTrack });
+  } catch (error) {
+    res.status(500).json({ success: false, error });
+  }
 };
 
 export default currentlyPlayingAPI;
