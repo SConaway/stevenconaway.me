@@ -357,7 +357,7 @@ export default function Index() {
           </div>
 
           <div className="w-full max-w-[1000px]">
-            <div className="flex flex-row flex-wrap items-stretch justify-center mt-6">
+            <div className="flex flex-row flex-wrap items-center justify-center mt-6">
               <Project
                 title="Personal Website"
                 description="This website! I built it using Next.js, TypeScript, and Tailwind CSS."
@@ -418,7 +418,7 @@ export default function Index() {
         </div>
       </main>
 
-      <footer className="flex flex-col items-center justify-center w-full px-6 mt-3 bg-zinc-900 text-zinc-300">
+      <footer className="flex flex-col items-center justify-center w-full px-6 mt-3 bg-zinc-900 text-zinc-400">
         <div className="w-full max-w-[60ch]">
           {/* copyright */}
           <p className="text-center">
@@ -430,10 +430,11 @@ export default function Index() {
             <p className="mr-2">Contact me at:</p>
             <a
               href="mailto:steven@stevenconaway.me"
-              className="special-underline-zinc-300"
+              className="special-underline-zinc-500"
             >
               steven@stevenconaway.me
             </a>
+            .
           </div>
         </div>
       </footer>
