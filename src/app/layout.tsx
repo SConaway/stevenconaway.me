@@ -34,7 +34,7 @@ export default function RootLayout({
         <meta
           property="og:image"
           key="image"
-          content="https://stevenconaway.me/images/og.jpg"
+          content="https://stevenconaway.me/api/opengraph-image"
         />
         <meta property="og:url" key="url" content="https://stevenconaway.me" />
       </head>

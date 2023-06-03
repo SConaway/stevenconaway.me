@@ -2,13 +2,10 @@ import { FiLink } from 'react-icons/fi';
 
 import Image, { ImageProps } from 'next/image';
 
-type Props = {
+type Props = Omit<ImageProps, 'alt'> & {
   title: string;
   description: string;
   link: string;
-  image: ImageProps['src'];
-  height: number;
-  width: number;
 };
 
 // display image with title, then on hover, display description
@@ -25,12 +22,12 @@ const Project = (props: Props) => {
         // style={{ aspectRatio: `${props.width}/${props.height}` }}
       >
         <Image
-          src={props.image}
-          alt={props.title}
+          {...props}
           className="rounded-lg group-hover:brightness-[.4] transition"
           quality={40}
-          placeholder="blur"
           sizes="300px"
+          placeholder={typeof props.src !== 'string' ? 'blur' : 'empty'}
+          alt={props.title}
           // className="absolute inset-0 block object-cover w-full h-full"
         />
 

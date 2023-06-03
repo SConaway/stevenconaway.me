@@ -6,7 +6,7 @@ import CurrentlyPlaying from '@/components/CurrentlyPlaying';
 import Image from 'next/image';
 
 import NDImage from '../../public/images/nd.jpg';
-import WebImage from '../../public/images/website.png';
+// import WebImage from '../../public/images/website.png';
 import OLCImage from '../../public/images/olc.png';
 import ELAImage from '../../public/images/ela.jpg';
 import M5TimelapseImage from '../../public/images/m5timelapse.png';
@@ -362,9 +362,9 @@ export default function Index() {
                 title="Personal Website"
                 description="This website! I built it using Next.js, TypeScript, and Tailwind CSS."
                 link="https://stevenconaway.me"
-                image={WebImage}
-                height={WebImage.height}
-                width={WebImage.width}
+                src={'/api/opengraph-image'}
+                height={630}
+                width={1200}
                 // rendered via chrome as a 600x315 image and a lot of
                 // modifications to the text spacing
               />
@@ -373,7 +373,7 @@ export default function Index() {
                 title="Outdoor Lighting Controller"
                 description="An ESP8266-based controller for outdoor lighting. I built it using ESPHome and Home Assistant."
                 link="https://github.com/SConaway/Outdoor-Lighting-Controller.git"
-                image={OLCImage}
+                src={OLCImage}
                 height={OLCImage.height}
                 width={OLCImage.width}
               />
@@ -382,7 +382,7 @@ export default function Index() {
                 title="CircuitPython-based Sensor Board"
                 description="A drone-mounted PCB with air quality sensors based on an Adafruit Feather running CircuitPython."
                 link="https://github.com/ELAScience/AQ-drone"
-                image={ELAImage}
+                src={ELAImage}
                 height={ELAImage.height}
                 width={ELAImage.width}
               />
@@ -391,7 +391,7 @@ export default function Index() {
                 title="m5stack-timelapse"
                 description="An ESP32-based M5Stack timelapse camera built using Arduino, NodeJS, and bash scripting."
                 link="https://github.com/SConaway/m5stack-timelapse"
-                image={M5TimelapseImage}
+                src={M5TimelapseImage}
                 height={M5TimelapseImage.height}
                 width={M5TimelapseImage.width}
               />
@@ -400,7 +400,7 @@ export default function Index() {
                 title="MCWeb"
                 description="A web-based Minecraft server management tool built using React, NodeJS, and Express."
                 link="https://github.com/SConaway/mcweb"
-                image={MCWebImage}
+                src={MCWebImage}
                 height={MCWebImage.height}
                 width={MCWebImage.width}
               />
@@ -409,7 +409,7 @@ export default function Index() {
                 title="react-native-credit-card-display"
                 description="An interactive React Native component for displaying credit card information."
                 link="https://github.com/SConaway/react-native-credit-card-display"
-                image={RNCCDImage}
+                src={RNCCDImage}
                 height={RNCCDImage.height}
                 width={RNCCDImage.width}
               />
