@@ -2,11 +2,19 @@ import { ImageResponse } from 'next/server';
 
 export const runtime = 'edge';
 
-export default function handler() {
+const GeologicaBold = fetch(
+  new URL('./Geologica-Bold.ttf', import.meta.url),
+).then((res) => res.arrayBuffer());
+const GeologicaBlack = fetch(
+  new URL('./Geologica-Black.ttf', import.meta.url),
+).then((res) => res.arrayBuffer());
+
+export default async function handler() {
   return new ImageResponse(
     (
       <div
         style={{
+          fontFamily: 'Geologica',
           display: 'flex',
           flexDirection: 'column',
           backgroundImage: 'url(https://stvn.ml/images/ndog.jpg)',
@@ -34,18 +42,18 @@ export default function handler() {
                 tw="py-8"
               >
                 <div style={{ display: 'flex', fontWeight: 'bold' }}>
-                  <p tw="text-center text-4xl font-bold text-slate-300 mx-auto">
+                  <p tw="text-center text-4xl text-slate-300 mx-auto">
                     Hi,{` `}
                     I’m
                   </p>
                 </div>
-                <div style={{ display: 'flex', fontWeight: 'bold' }} tw="my-4">
-                  <p tw="text-center text-7xl font-bold text-white mx-auto">
+                <div style={{ display: 'flex', fontWeight: 'black' }} tw="my-4">
+                  <p tw="text-center text-8xl text-white mx-auto">
                     Steven Conaway
                   </p>
                 </div>
                 <div style={{ display: 'flex', fontWeight: 'bold' }}>
-                  <p tw="text-center text-2xl font-bold text-slate-300 mx-auto">
+                  <p tw="text-center text-3xl text-slate-300 mx-auto">
                     I’m a Software Developer and a Junior at the University of
                     Notre Dame.
                   </p>
@@ -59,6 +67,20 @@ export default function handler() {
     {
       width: 1200,
       height: 630,
+      fonts: [
+        {
+          name: 'Geologica',
+          data: await GeologicaBold,
+          weight: 700,
+          style: 'normal',
+        },
+        {
+          name: 'Geologica',
+          data: await GeologicaBlack,
+          weight: 900,
+          style: 'normal',
+        },
+      ],
     },
   );
 }
