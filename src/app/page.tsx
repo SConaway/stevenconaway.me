@@ -81,8 +81,8 @@ export default function Index() {
                 Steven Conaway
               </p>
               <p className="mb-8 text-xl font-bold text-slate-300">
-                I’m a Software Developer and a Sophomore at the University of
-                Notre Dame.
+                I’m a Software Developer and a Junior at the University of Notre
+                Dame.
               </p>
 
               <div className="border-slate-300 border-b w-full h-[1px]"></div>
