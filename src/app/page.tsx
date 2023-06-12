@@ -17,23 +17,38 @@ import Project from '@/components/Project';
 
 function NavBar() {
   return (
-    <nav className="flex flex-row flex-wrap items-center justify-center text-white">
-      <a href="#main" className="my-1 mr-4 sm:my-0 last:mr-0">
+    <nav className="flex flex-row flex-wrap items-center justify-center text-zinc-200">
+      <a
+        href="#main"
+        className="px-2 underline transition-colors underline-offset-2 decoration-zinc-200 hover:decoration-zinc-400 hover:text-zinc-400"
+      >
         Home
       </a>
-      <a href="#about" className="my-1 mr-4 sm:my-0 last:mr-0">
+      <a
+        href="#about"
+        className="px-2 underline transition-colors underline-offset-2 decoration-zinc-200 hover:decoration-zinc-400 hover:text-zinc-400"
+      >
         About
       </a>
-      <a href="#tech-stack" className="my-1 mr-4 sm:my-0 last:mr-0">
+      <a
+        href="#tech-stack"
+        className="px-2 underline transition-colors underline-offset-2 decoration-zinc-200 hover:decoration-zinc-400 hover:text-zinc-400"
+      >
         Tech Stack
       </a>
-      <a href="#experience" className="my-1 mr-4 sm:my-0 last:mr-0">
+      <a
+        href="#experience"
+        className="px-2 underline transition-colors underline-offset-2 decoration-zinc-200 hover:decoration-zinc-400 hover:text-zinc-400"
+      >
         Experience
       </a>
-      <a href="#projects" className="my-1 mr-4 sm:my-0 last:mr-0">
+      <a
+        href="#projects"
+        className="px-2 underline transition-colors underline-offset-2 decoration-zinc-200 hover:decoration-zinc-400 hover:text-zinc-400"
+      >
         Projects
       </a>
-      {/* <a href="#contact" className="my-1 mr-4 sm:my-0 last:mr-0">
+      {/* <a href="#contact" className="px-2 underline transition-colors underline-offset-2 decoration-white zinc-200:decoration-zinc-400 hover:text-zinc-400">
         Contact
       </a> */}
     </nav>
@@ -427,7 +442,7 @@ export default function Index() {
 
           {/* add contact info */}
           <div className="flex flex-row items-center justify-center">
-            <p className="mr-2">Contact me at:</p>
+            <p className="mr-[0.5ch]">Contact me at:</p>
             <a
               href="mailto:steven@stevenconaway.me"
               className="special-underline-zinc-500"
