@@ -2918,6 +2918,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vercel/analytics@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "@vercel/analytics@npm:1.0.1"
+  checksum: 6876e1d0868e85198d43a17ffec7266cdee5a53d5fc797d3f7e0d64e9d76a2ade3cbdcbc0a665e2ee2389f65dfc80591f7d667e9fc981cdbaa848006cbaefe19
+  languageName: node
+  linkType: hard
+
 "@vercel/build-utils@npm:6.7.5":
   version: 6.7.5
   resolution: "@vercel/build-utils@npm:6.7.5"
@@ -11239,6 +11246,7 @@ __metadata:
     "@types/spotify-web-api-node": ^5.0.7
     "@typescript-eslint/eslint-plugin": ^5.59.9
     "@typescript-eslint/parser": ^5.59.9
+    "@vercel/analytics": ^1.0.1
     autoprefixer: ^10.4.14
     commitizen: ^4.3.0
     cz-conventional-changelog: ^3.3.0
