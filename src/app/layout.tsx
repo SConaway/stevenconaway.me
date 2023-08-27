@@ -12,7 +12,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="bg-zinc-800 scroll-smooth">
       <head>
-        <meta charset="utf-8" />
+        <meta charSet="utf-8" />
         
         <title>Steven Conaway</title>
         
