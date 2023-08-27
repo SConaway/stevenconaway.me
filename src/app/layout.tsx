@@ -12,12 +12,15 @@ export default function RootLayout({
   return (
     <html lang="en" className="bg-zinc-800 scroll-smooth">
       <head>
-        <meta charSet="utf-8" />
+        <meta charset="utf-8" />
+        
         <title>Steven Conaway</title>
+        
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
+        
         <link rel="icon" href="/favicon.ico" />
         <link rel="shortcut icon" href="/favicon.ico" />
         {/* <link rel="manifest" href="/manifest.json" /> */}
@@ -39,6 +42,8 @@ export default function RootLayout({
           content="https://stevenconaway.me/api/opengraph-image"
         />
         <meta property="og:url" key="url" content="https://stevenconaway.me" />
+
+        <link rel="canonical" href="https://stevenconaway.me" />
       </head>
       <body>
         {children}
