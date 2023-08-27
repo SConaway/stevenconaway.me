@@ -13,14 +13,14 @@ export default function RootLayout({
     <html lang="en" className="bg-zinc-800 scroll-smooth">
       <head>
         <meta charSet="utf-8" />
-        
+
         <title>Steven Conaway</title>
-        
+
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        
+
         <link rel="icon" href="/favicon.ico" />
         <link rel="shortcut icon" href="/favicon.ico" />
         {/* <link rel="manifest" href="/manifest.json" /> */}
