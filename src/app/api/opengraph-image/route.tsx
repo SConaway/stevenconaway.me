@@ -2,14 +2,21 @@ import { ImageResponse } from 'next/og';
 
 export const runtime = 'edge';
 
+// const GeologicaBold = fetch(
+//   new URL('./Geologica-Bold.ttf', import.meta.url),
+// ).then((res) => res.arrayBuffer());
+// const GeologicaBlack = fetch(
+//   new URL('./Geologica-Black.ttf', import.meta.url),
+// ).then((res) => res.arrayBuffer());
+
 const GeologicaBold = fetch(
-  new URL('./Geologica-Bold.ttf', import.meta.url),
+  'https://stvn.ml/public/fonts/Geologica/Geologica-Bold.ttf',
 ).then((res) => res.arrayBuffer());
 const GeologicaBlack = fetch(
-  new URL('./Geologica-Black.ttf', import.meta.url),
+  'https://stvn.ml/public/fonts/Geologica/Geologica-Black.ttf',
 ).then((res) => res.arrayBuffer());
 
-export default async function handler() {
+export async function GET() {
   return new ImageResponse(
     (
       <div
