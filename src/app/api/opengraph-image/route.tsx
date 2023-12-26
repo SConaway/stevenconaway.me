@@ -2,19 +2,12 @@ import { ImageResponse } from 'next/og';
 
 export const runtime = 'edge';
 
-// const GeologicaBold = fetch(
-//   new URL('./Geologica-Bold.ttf', import.meta.url),
-// ).then((res) => res.arrayBuffer());
-// const GeologicaBlack = fetch(
-//   new URL('./Geologica-Black.ttf', import.meta.url),
-// ).then((res) => res.arrayBuffer());
-
 const GeologicaBold = fetch(
-  'https://stvn.ml/public/fonts/Geologica/Geologica-Bold.ttf',
+  'https://stvn.ml/fonts/Geologica/Geologica-Bold.ttf',
 ).then((res) => res.arrayBuffer());
-const GeologicaBlack = fetch(
-  'https://stvn.ml/public/fonts/Geologica/Geologica-Black.ttf',
-).then((res) => res.arrayBuffer());
+// const GeologicaBlack = fetch(
+//   'https://stvn.ml/fonts/Geologica/Geologica-Black.ttf',
+// ).then((res) => res.arrayBuffer());
 
 export async function GET() {
   return new ImageResponse(
@@ -54,7 +47,7 @@ export async function GET() {
                     I’m
                   </p>
                 </div>
-                <div style={{ display: 'flex', fontWeight: 'black' }} tw="my-4">
+                <div style={{ display: 'flex', fontWeight: 'bold' }} tw="my-4">
                   <p tw="text-center text-8xl text-white mx-auto">
                     Steven Conaway
                   </p>
@@ -81,12 +74,12 @@ export async function GET() {
           weight: 700,
           style: 'normal',
         },
-        {
-          name: 'Geologica',
-          data: await GeologicaBlack,
-          weight: 900,
-          style: 'normal',
-        },
+        // {
+        //   name: 'Geologica',
+        //   data: await GeologicaBlack,
+        //   weight: 900,
+        //   style: 'normal',
+        // },
       ],
     },
   );
