@@ -71,7 +71,7 @@ export default function Index() {
 
       <hr className="w-full border-t-2 border-zinc-800 my--2" />
 
-      <main className="flex flex-col items-center mt-4" id="main">
+      <main className="flex flex-col items-center mt-4 scroll-my-6" id="main">
         <div className="min-h-[80vh] w-full max-w-5xl mb-3 relative">
           <Image
             src={NDImage}
@@ -132,7 +132,7 @@ export default function Index() {
         </div>
 
         <div
-          className="w-full min-h-[30vh] flex flex-col items-center justify-center py-10 px-6 mt-3 bg-zinc-700 text-zinc-50"
+          className="w-full min-h-[30vh] flex flex-col items-center justify-center py-10 px-6 mt-3 bg-zinc-700 text-zinc-50 scroll-my-6"
           id="about"
         >
           <div className="w-full max-w-[60ch]">
@@ -167,7 +167,7 @@ export default function Index() {
         </div>
 
         <div
-          className="flex flex-col items-center justify-center w-full px-6 py-10 mt-3 bg-zinc-800 text-zinc-100"
+          className="flex flex-col items-center justify-center w-full px-6 py-10 mt-3 bg-zinc-800 text-zinc-100 scroll-my-6"
           id="tech-stack"
         >
           <div className="w-full max-w-[60ch]">
@@ -262,7 +262,7 @@ export default function Index() {
         </div>
 
         <div
-          className="flex flex-col items-center justify-center w-full px-6 py-10 mt-3 bg-zinc-800 text-zinc-100"
+          className="flex flex-col items-center justify-center w-full px-6 py-10 mt-3 bg-zinc-800 text-zinc-100 scroll-my-6"
           id="experience"
         >
           <div className="w-full max-w-[60ch]">
@@ -359,7 +359,7 @@ export default function Index() {
         </div>
 
         <div
-          className="flex flex-col items-center justify-center w-full px-6 py-10 mt-3 bg-zinc-800 text-zinc-100"
+          className="flex flex-col items-center justify-center w-full px-6 py-10 mt-3 bg-zinc-800 text-zinc-100 scroll-my-6"
           id="projects"
         >
           <div className="w-full max-w-[60ch]">
