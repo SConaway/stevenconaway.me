@@ -8,9 +8,6 @@ export async function GET() {
       { success: true, data: currentTrack },
       {
         status: 200,
-        headers: {
-          'Cache-Control': 'public, s-maxage=10, stale-while-revalidate=59',
-        },
       },
     );
   } catch (error) {
@@ -18,10 +15,9 @@ export async function GET() {
       { success: false, error },
       {
         status: 500,
-        headers: {
-          'Cache-Control': 'public, s-maxage=10, stale-while-revalidate=59',
-        },
       },
     );
   }
 }
+
+export const revalidate = 10;

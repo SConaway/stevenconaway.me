@@ -24,6 +24,7 @@ const authenticate = async () => {
 
 export const getCurrentTrack = async () => {
   try {
+    console.log(new Date());
     const spotifyApi = await authenticate();
 
     const playing = await spotifyApi.getMyCurrentPlayingTrack();

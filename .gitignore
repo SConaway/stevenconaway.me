@@ -229,3 +229,4 @@ $RECYCLE.BIN/
 !.yarn/versions
 .pnp.*
 .vercel
+.env*.local
