@@ -268,24 +268,43 @@ export default function Index() {
           <div className="w-full max-w-[60ch]">
             <h2 className="text-3xl font-bold text-center">Experience</h2>
             <hr className="my-6" />
-            <p>
-              During the Spring 2023 semester at Notre Dame, I have served as a{' '}
+            <p className="mb-2">
+              During the Spring 2023 semester at Notre Dame, I served as a{' '}
               <strong>Teaching Assistant</strong> for the course,{' '}
-              <strong>Logic Design and Sequential Circuits</strong>. Some of my
-              duties include the following:
+              <strong>Logic Design and Sequential Circuits</strong>. This course
+              culminates in the implementation of a basic 16-bit processor
+              designed in Verilog and programmed in assembly.
+            </p>
+            <p className="mb-2">
+              In Fall 2023, I was a teaching assistant for Notre Dame’s{' '}
+              <strong>Computer Architecture</strong> course. In this course,
+              students learn about the design of processors and memory systems.
+              This course also includes a significant amount of programming in
+              C, as well as RISC-V assembly.
+            </p>
+            <p className="mb-2">
+              Now, in Spring 2024, I am a teaching assistant for the{' '}
+              <strong>Systems Programming</strong> course. This course involves
+              Bash scripting, Python, and C programming, as well as the use of
+              various Linux tools, including <code>git</code>, <code>make</code>
+              , and <code>valgrind</code>. Students also learn the use of Linux
+              system calls.
+            </p>
+            <p>
+              Throughout these last three semesters, some of my responsibilities
+              have been:
             </p>
             <ul className="pl-8 my-2 list-disc">
+              <li>Leading a weekly lab session.</li>
               <li>
-                Providing one-on-one support and feedback to sophomore students
-                at weekly office hours.
+                Hosting 2 or more office hours to assist students with their
+                coursework.
               </li>
-              <li>
-                Co-Leading Studio Sessions where students work on lab
-                assignments.
-              </li>
-              <li>Grading weekly homework assignments and exams.</li>
+              <li>Graded weekly readings and homework assignments.</li>
             </ul>
+
             <hr className="my-6" />
+
             <p>
               During Summer 2022, I served as a{' '}
               <strong>Resident Counselor and Course Facilitator</strong> for the
@@ -335,7 +354,6 @@ export default function Index() {
               I also worked as a <strong>Tech Instructor</strong> for the East
               Los Angeles Community Youth Center.
             </p>
-
             <ul className="pl-8 my-2 list-disc">
               <li>
                 Taught several classes, including "How to Build your own
