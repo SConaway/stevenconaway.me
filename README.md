@@ -1,9 +1,9 @@
 # My Portfolio
 
-![image of portfolio](./public/images/website.png)
+![image of portfolio](https://stvn.ml/api/opengraph-image)
 
 ## Features
 
 - uses spotify api to display my currently playing song
-- uses nextjs 13's app routing
-- uses nextjs's new image component
+- uses nextjs 14's app routing
+- uses nextjs's new image component to optimize the images (especially the main one)
