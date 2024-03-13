@@ -105,7 +105,7 @@ export default function Index() {
               <div className="flex flex-row justify-around mt-8">
                 <SocialIcon
                   icon={<FiMail />}
-                  url="mailto:steven@stevenconaway.me"
+                  url="mailto:me@stevenconaway.me"
                   description="Email"
                 />
 
@@ -146,22 +146,22 @@ export default function Index() {
               <li>I grew up in Los Angeles.</li>
               <li>
                 I now live in Idaho! (well, at least, for summers, since I go to
-                school at Notre Dame [in Indiana])
+                school at Notre Dame.
               </li>
-              {/* more? */}
             </ul>
 
             <hr className="my-6" />
 
             <h3 className="text-xl font-bold">Things I like:</h3>
             <ol className="pl-8 my-2 list-decimal">
-              <li>Coding (obviously)</li>
+              <li>Coding</li>
+              <li>Embedded System Design and Programming</li>
+              <li>Chip Design</li>
               <li>
                 Music
                 <CurrentlyPlaying />
               </li>
               <li>Singing (choir and musicals)</li>
-              {/* more? */}
             </ol>
           </div>
         </div>
@@ -185,6 +185,14 @@ export default function Index() {
 
             <h3 className="text-xl font-bold">Software:</h3>
             <ol className="pl-8 my-2 list-decimal">
+              <li className="my-2">
+                <a
+                  className="underline transition-colors underline-offset-2 decoration-zinc-200 hover:decoration-zinc-400 hover:text-zinc-400"
+                  href="https://lunarvim.org/"
+                >
+                  NeoVim (through LunarVim)
+                </a>
+              </li>
               <li className="my-2">
                 <a
                   className="underline transition-colors underline-offset-2 decoration-zinc-200 hover:decoration-zinc-400 hover:text-zinc-400"
@@ -214,7 +222,7 @@ export default function Index() {
                   className="underline transition-colors underline-offset-2 decoration-zinc-200 hover:decoration-zinc-400 hover:text-zinc-400"
                   href="https://www.ecma-international.org/publications-and-standards/standards/ecma-262/"
                 >
-                  ES2022 (JavaScript)
+                  ES2022 JavaScript
                 </a>
               </li>
               <li className="my-2">
@@ -306,6 +314,33 @@ export default function Index() {
             <hr className="my-6" />
 
             <p>
+              During Summer 2023, I served as a <strong>Summer Intern</strong>{' '}
+              for the University of Notre Dame's Center for Civic Innovation.
+              Some of my responsibilities included the following:
+            </p>
+            <ul className="pl-8 my-2 list-disc">
+              <li>
+                Conducted online research and interviews with local and other
+                experts to better understand opportunities for innovation in
+                smart water management.
+              </li>
+              <li>
+                Prepared a report on the costs associated with water loss due to
+                leaks and the costs associated with water storage, delivery, and
+                purification, as well as a survey of current strategies to
+                reduce these costs.
+              </li>
+              <li>
+                Developed and implemented an embedded system, coupled with a
+                machine-learning algorithm, to use the sound of water flowing
+                through pipes to identify the presence of leaks in buried
+                distribution mains.
+              </li>
+            </ul>
+
+            <hr className="my-6" />
+
+            <p>
               During Summer 2022, I served as a{' '}
               <strong>Resident Counselor and Course Facilitator</strong> for the
               University of Notre Dame's Pre-College Programs. Some of my
@@ -333,7 +368,9 @@ export default function Index() {
                 450+ prospective students.
               </li>
             </ul>
+
             <hr className="my-6" />
+
             <p>
               I worked as a <strong>Lead Mobile Application Developer</strong>{' '}
               for <a href="https://we2link.com/">We2Link</a> from August 2019 to
