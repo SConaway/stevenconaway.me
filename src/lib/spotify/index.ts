@@ -12,7 +12,7 @@ const authenticate = async () => {
   spotifyApi.setRefreshToken(process.env.SPOTIFY_REFRESH_TOKEN as string);
 
   const data = await spotifyApi.refreshAccessToken();
-  const access_token = data.body[`access_token`];
+  const access_token = data.body['access_token'];
 
   // console.log('The access token has been refreshed!');
   // console.log('access_token:', access_token);
@@ -31,7 +31,7 @@ export const getCurrentTrack = async () => {
 
     // console.log(JSON.stringify(playing.body, null, 2));
 
-    if (playing.body.currently_playing_type !== `track`) {
+    if (playing.body.currently_playing_type !== 'track') {
       return null;
     }
 
