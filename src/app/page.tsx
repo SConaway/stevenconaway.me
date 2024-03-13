@@ -431,12 +431,10 @@ export default function Index() {
               <Project
                 title="Personal Website"
                 description="This website! I built it using Next.js, TypeScript, and Tailwind CSS."
-                link="https://stevenconaway.me"
+                link="https://github.com/SConaway/stevenconaway.me"
                 src={'/api/opengraph-image'}
                 height={630}
                 width={1200}
-                // rendered via chrome as a 600x315 image and a lot of
-                // modifications to the text spacing
               />
 
               <Project
