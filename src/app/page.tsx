@@ -1,4 +1,4 @@
-import { FiMail, FiLinkedin, FiGithub, FiTwitter } from 'react-icons/fi';
+import { FiMail, FiLinkedin, FiGithub, FiX } from 'react-icons/fi';
 
 import SocialIcon from '@/components/SocialIcon';
 import CurrentlyPlaying from '@/components/CurrentlyPlaying';
@@ -96,7 +96,7 @@ export default function Index() {
                 Steven Conaway
               </p>
               <p className="mb-8 text-xl font-bold text-slate-300">
-                I’m a Software Developer and a Junior at the University of Notre
+                I’m a Software Developer and a Senior at the University of Notre
                 Dame.
               </p>
 
@@ -122,8 +122,8 @@ export default function Index() {
                 />
 
                 <SocialIcon
-                  icon={<FiTwitter />}
-                  url="https://twitter.com/StevenConaway4"
+                  icon={<FiX />}
+                  url="https://x.com/StevenConaway4"
                   description="Twitter"
                 />
               </div>
@@ -188,9 +188,9 @@ export default function Index() {
               <li className="my-2">
                 <a
                   className="underline transition-colors underline-offset-2 decoration-zinc-200 hover:decoration-zinc-400 hover:text-zinc-400"
-                  href="https://lunarvim.org/"
+                  href="https://github.com/SConaway/astronvim-config.git"
                 >
-                  NeoVim (through LunarVim)
+                  NeoVim (through AstroNvim)
                 </a>
               </li>
               <li className="my-2">
