@@ -54,7 +54,7 @@ export async function GET() {
                 </div>
                 <div style={{ display: 'flex', fontWeight: 'bold' }}>
                   <p tw="text-center text-3xl text-slate-300 mx-auto">
-                    I’m a Software Developer and a Junior at the University of
+                    I’m a Software Developer and a Senior at the University of
                     Notre Dame.
                   </p>
                 </div>
