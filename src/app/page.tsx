@@ -190,7 +190,7 @@ export default function Index() {
                   className="underline transition-colors underline-offset-2 decoration-zinc-200 hover:decoration-zinc-400 hover:text-zinc-400"
                   href="https://github.com/SConaway/astronvim-config.git"
                 >
-                  NeoVim (through AstroNvim)
+                  NeoVim
                 </a>
               </li>
               <li className="my-2">
@@ -207,6 +207,14 @@ export default function Index() {
                   href="https://python.org/"
                 >
                   Python
+                </a>
+              </li>
+              <li className="my-2">
+                <a
+                  className="underline transition-colors underline-offset-2 decoration-zinc-200 hover:decoration-zinc-400 hover:text-zinc-400"
+                  href="https://go.dev/"
+                >
+                  Go
                 </a>
               </li>
               <li className="my-2">
@@ -275,6 +283,84 @@ export default function Index() {
         >
           <div className="w-full max-w-[60ch]">
             <h2 className="text-3xl font-bold text-center">Experience</h2>
+
+            <hr className="my-6" />
+
+            <p className="mb-2">
+              During the summer of 2024, I co-developed the{' '}
+              <a
+                href="https://canvas.howard.edu/courses/47629/pages/lecture-notes-and-schedule"
+                className="underline transition-colors underline-offset-1 decoration-zinc-200 hover:decoration-zinc-400 hover:text-zinc-400"
+              >
+                curriculum
+              </a>{' '}
+              and tested assignments and procedures for an 8-week advanced chip
+              design tapeout class at Howard University. My responsibilities as
+              a Teaching Assistant included grading multiple labs and homework
+              assignments, as well as hosting weekly office hours and numerous
+              as-needed appointments to support student learning.
+            </p>
+
+            <p className="mb-2">
+              I coordinated with Cadence Design Systems and Muse Semiconductor
+              to ensure the proper IP/PDK setup, enabling students to work
+              seamlessly with the tools.
+            </p>
+
+            <p className="mb-2">
+              In guiding student teams, I provided expertise in designing,
+              testing, and verifying digital, analog/RF, and mixed-signal chips
+              using industry-standard tools such as Verilog, Cadence Virtuoso,
+              Xcelium, Genus, Innovus, Tempus, and Spectre. This guidance led to
+              the successful completion of designs, culminating in a summer
+              tapeout and fabrication.
+            </p>
+
+            <hr className="my-6" />
+
+            <p>
+              Starting in the Summer of 2023, I have served as the ACES
+              (Academically Collaborative Engineering Spaces) Programming
+              Assistant and an ACES Peer Mentor at the University of Notre Dame.
+              In this role, I have been responsible for the following:
+            </p>
+
+            <ul className="pl-8 my-2 list-disc">
+              <li>
+                Facilitated study rooms for sophomore-level engineering courses,
+                assisting students with homework and increasing their
+                understanding of course material.
+              </li>
+              <li>
+                Maintained communication with course instructors to stay
+                informed on weekly topics and due dates.
+              </li>
+              <li>
+                Co-created exam review sessions for the Intro to Electronic
+                Circuits class, including practice problems, core concept
+                presentations, and Q{'&'}A sessions.
+              </li>
+              <li>
+                Coordinated study room schedules and managed attendance records
+                for the ACES Program.
+              </li>
+              <li>
+                Designed banners and fliers to advertise ACES services and
+                events, promoting a collaborative and welcoming study
+                environment, contributing to the program's success in supporting
+                over half of the sophomore engineers.
+              </li>
+              <li>
+                Created the employee handbook and developed a training course on
+                Canvas for peer mentors and tutors.
+              </li>
+              <li>
+                Managed the application process for prospective student
+                employees, using Python and Go scripting to automate data
+                collection and processing.
+              </li>
+            </ul>
+
             <hr className="my-6" />
             <p className="mb-2">
               During the Spring 2023 semester at Notre Dame, I served as a{' '}
@@ -373,8 +459,14 @@ export default function Index() {
 
             <p>
               I worked as a <strong>Lead Mobile Application Developer</strong>{' '}
-              for <a href="https://we2link.com/">We2Link</a> from August 2019 to
-              August 2022. In this role, I:
+              for{' '}
+              <a
+                href="https://we2link.com/"
+                className="underline transition-colors underline-offset-1 decoration-zinc-200 hover:decoration-zinc-400 hover:text-zinc-400"
+              >
+                We2Link
+              </a>{' '}
+              from August 2019 to August 2022. In this role, I:
             </p>
             <ul className="pl-8 my-2 list-disc">
               <li>
