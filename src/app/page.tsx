@@ -177,8 +177,12 @@ export default function Index() {
 
             <h3 className="text-xl font-bold">Hardware:</h3>
             <ol className="pl-8 my-2 list-decimal">
-              <li>2021 16" MacBook Pro (used for basically everything)</li>
-              <li>2020 11" iPad Pro (used for school stuff and art things)</li>
+              <li>
+                2021 16&rdquo; MacBook Pro (used for basically everything)
+              </li>
+              <li>
+                2020 11&rdquo; iPad Pro (used for school stuff and art things)
+              </li>
             </ol>
 
             <hr className="my-6" />
@@ -347,8 +351,8 @@ export default function Index() {
               <li>
                 Designed banners and fliers to advertise ACES services and
                 events, promoting a collaborative and welcoming study
-                environment, contributing to the program's success in supporting
-                over half of the sophomore engineers.
+                environment, contributing to the program&apos;s success in
+                supporting over half of the sophomore engineers.
               </li>
               <li>
                 Created the employee handbook and developed a training course on
@@ -401,8 +405,8 @@ export default function Index() {
 
             <p>
               During Summer 2023, I served as a <strong>Summer Intern</strong>{' '}
-              for the University of Notre Dame's Center for Civic Innovation.
-              Some of my responsibilities included the following:
+              for the University of Notre Dame&apos;s Center for Civic
+              Innovation. Some of my responsibilities included the following:
             </p>
             <ul className="pl-8 my-2 list-disc">
               <li>
@@ -429,7 +433,7 @@ export default function Index() {
             <p>
               During Summer 2022, I served as a{' '}
               <strong>Resident Counselor and Course Facilitator</strong> for the
-              University of Notre Dame's Pre-College Programs. Some of my
+              University of Notre Dam&apos;s Pre-College Programs. Some of my
               responsibilities included the following:
             </p>
             <ul className="pl-8 my-2 list-disc">
@@ -485,21 +489,21 @@ export default function Index() {
             </p>
             <ul className="pl-8 my-2 list-disc">
               <li>
-                Taught several classes, including "How to Build your own
-                Arduino-based Smart Car", "Introduction to Drones", and "LEGO
-                Robotics", to underserved elementary- and middle-school
-                students.
+                Taught several classes, including &ldquo;How to Build your own
+                Arduino-based Smart Car&rdquo;, &ldquo;Introduction to
+                Drones&rdquo;, and &ldquo;LEGO Robotics&rdquo;, to underderved
+                elementary- and middle-school students.
               </li>
               <li>
                 Our Robotics team won second place in the First Annual Boyle
-                Heights Robotics Competition. Also, developed the curriculum
-                currently in use for the "How to Build your own Arduino-based
-                Smart Car" class.
+                Heights Robotics Competition. Aldo, developed the curriculum
+                currently in use for the &ldquo;How to Build your own
+                Arduino-based Smart Car&rdquo; class.
               </li>
               <li>
-                In November 2020, during COVID, I began teaching “Introductory
-                Robotics Programming”, a virtual class teaching students basic
-                programming skills by use of VEXCode VR.
+                In November 2020, during COVID, I began teaching
+                &ldquo;Introductory Robotics Programming&rdquo;, a virtual class
+                teaching students basic programming skilld by use of VEXCode VR.
               </li>
             </ul>
           </div>

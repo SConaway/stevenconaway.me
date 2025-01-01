@@ -43,6 +43,8 @@ export const getCurrentTrack = async () => {
       artist = `${playing.body.item.artists[0].name} and ${playing.body.item.artists[1].name}`;
     else if (playing.body.item.artists.length > 2) {
       artist = playing.body.item.artists
+        // i am lazy:
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         .map((a: any) => a.name)
         .join(', ')
         .replace(/,(?=[^,]*$)/, ', and');
