@@ -2,6 +2,9 @@ import { ImageResponse } from 'next/og';
 
 export const runtime = 'edge';
 
+const GeologicaRegular = fetch(
+  'https://stvn.ml/fonts/Geologica/Geologica-Regular.ttf',
+).then((res) => res.arrayBuffer());
 const GeologicaBold = fetch(
   'https://stvn.ml/fonts/Geologica/Geologica-Bold.ttf',
 ).then((res) => res.arrayBuffer());
@@ -41,7 +44,7 @@ export async function GET() {
                 }}
                 tw="py-8"
               >
-                <div style={{ display: 'flex', fontWeight: 'bold' }}>
+                <div style={{ display: 'flex' }}>
                   <p tw="text-center text-4xl text-slate-300 mx-auto">
                     Hi,{` `}
                     I’m
@@ -52,10 +55,11 @@ export async function GET() {
                     Steven Conaway
                   </p>
                 </div>
-                <div style={{ display: 'flex', fontWeight: 'bold' }}>
+                <div style={{ display: 'flex' }}>
                   <p tw="text-center text-3xl text-slate-300 mx-auto">
-                    I’m a Software Developer and a Senior at the University of
-                    Notre Dame.
+                    I just graduated from the University of Notre Dame with a
+                    degree in Computer Engineering. Now, I&apos;m working as an
+                    Application Engineer at Cadence Design Systems.
                   </p>
                 </div>
               </div>
@@ -72,6 +76,12 @@ export async function GET() {
           name: 'Geologica',
           data: await GeologicaBold,
           weight: 700,
+          style: 'normal',
+        },
+        {
+          name: 'Geologica',
+          data: await GeologicaRegular,
+          weight: 400,
           style: 'normal',
         },
         // {
