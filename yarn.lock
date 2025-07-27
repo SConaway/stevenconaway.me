@@ -247,10 +247,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/js@npm:9.31.0":
-  version: 9.31.0
-  resolution: "@eslint/js@npm:9.31.0"
-  checksum: 10c0/f9d4c73d0fafe70679a418cbb25ab7ebcc8f1dba6c32456d6f8ba5a137d583ecff233cfe10f61f41d7d4d2220e94cff1f39fc7ed1fa3819d1888dee1cad678ea
+"@eslint/js@npm:9.32.0":
+  version: 9.32.0
+  resolution: "@eslint/js@npm:9.32.0"
+  checksum: 10c0/f71e8f9146638d11fb15238279feff98801120a4d4130f1c587c4f09b024ff5ec01af1ba88e97ba6b7013488868898a668f77091300cc3d4394c7a8ed32d2667
   languageName: node
   linkType: hard
 
@@ -261,7 +261,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/plugin-kit@npm:^0.3.1":
+"@eslint/plugin-kit@npm:^0.3.4":
   version: 0.3.4
   resolution: "@eslint/plugin-kit@npm:0.3.4"
   dependencies:
@@ -612,74 +612,74 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/env@npm:15.4.2":
-  version: 15.4.2
-  resolution: "@next/env@npm:15.4.2"
-  checksum: 10c0/8ee793035f0a7fb55335ea2bc2794ccd68747e6ab8c591001662dbf1ba328f43b04d02bb3a6c9d6a60ed18b55d44cc157b724121ce8dbea8584ca41272eb90a4
+"@next/env@npm:15.4.4":
+  version: 15.4.4
+  resolution: "@next/env@npm:15.4.4"
+  checksum: 10c0/7f94deb0bb3ef8e4bc2d08f95bbc2f1155931813f0277a13e1c62e34259619f14e972280f8b6f423dfcd3ede3d96c76cb82bae0e842ea16402e20c9be0d14737
   languageName: node
   linkType: hard
 
-"@next/eslint-plugin-next@npm:15.4.2, @next/eslint-plugin-next@npm:^15.4.2":
-  version: 15.4.2
-  resolution: "@next/eslint-plugin-next@npm:15.4.2"
+"@next/eslint-plugin-next@npm:15.4.4, @next/eslint-plugin-next@npm:^15.4.2":
+  version: 15.4.4
+  resolution: "@next/eslint-plugin-next@npm:15.4.4"
   dependencies:
     fast-glob: "npm:3.3.1"
-  checksum: 10c0/53806f57e776e83acf86490269b3f2370cbf1bf7e80f744974911227313f8f373a1d6ead4ee41c6a8e535f703b33ca6c8c03ad5abc0580ae30b38c474ec44b3d
+  checksum: 10c0/e32bd4c00beaaf7d815df678d99703824be840e6a416897aa69d861c72351b45343aaea4d79c489176f35ef94e0218fbee7185a55b0dea91a0ef1babaed8d602
   languageName: node
   linkType: hard
 
-"@next/swc-darwin-arm64@npm:15.4.2":
-  version: 15.4.2
-  resolution: "@next/swc-darwin-arm64@npm:15.4.2"
+"@next/swc-darwin-arm64@npm:15.4.4":
+  version: 15.4.4
+  resolution: "@next/swc-darwin-arm64@npm:15.4.4"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"@next/swc-darwin-x64@npm:15.4.2":
-  version: 15.4.2
-  resolution: "@next/swc-darwin-x64@npm:15.4.2"
+"@next/swc-darwin-x64@npm:15.4.4":
+  version: 15.4.4
+  resolution: "@next/swc-darwin-x64@npm:15.4.4"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"@next/swc-linux-arm64-gnu@npm:15.4.2":
-  version: 15.4.2
-  resolution: "@next/swc-linux-arm64-gnu@npm:15.4.2"
+"@next/swc-linux-arm64-gnu@npm:15.4.4":
+  version: 15.4.4
+  resolution: "@next/swc-linux-arm64-gnu@npm:15.4.4"
   conditions: os=linux & cpu=arm64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@next/swc-linux-arm64-musl@npm:15.4.2":
-  version: 15.4.2
-  resolution: "@next/swc-linux-arm64-musl@npm:15.4.2"
+"@next/swc-linux-arm64-musl@npm:15.4.4":
+  version: 15.4.4
+  resolution: "@next/swc-linux-arm64-musl@npm:15.4.4"
   conditions: os=linux & cpu=arm64 & libc=musl
   languageName: node
   linkType: hard
 
-"@next/swc-linux-x64-gnu@npm:15.4.2":
-  version: 15.4.2
-  resolution: "@next/swc-linux-x64-gnu@npm:15.4.2"
+"@next/swc-linux-x64-gnu@npm:15.4.4":
+  version: 15.4.4
+  resolution: "@next/swc-linux-x64-gnu@npm:15.4.4"
   conditions: os=linux & cpu=x64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@next/swc-linux-x64-musl@npm:15.4.2":
-  version: 15.4.2
-  resolution: "@next/swc-linux-x64-musl@npm:15.4.2"
+"@next/swc-linux-x64-musl@npm:15.4.4":
+  version: 15.4.4
+  resolution: "@next/swc-linux-x64-musl@npm:15.4.4"
   conditions: os=linux & cpu=x64 & libc=musl
   languageName: node
   linkType: hard
 
-"@next/swc-win32-arm64-msvc@npm:15.4.2":
-  version: 15.4.2
-  resolution: "@next/swc-win32-arm64-msvc@npm:15.4.2"
+"@next/swc-win32-arm64-msvc@npm:15.4.4":
+  version: 15.4.4
+  resolution: "@next/swc-win32-arm64-msvc@npm:15.4.4"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
 
-"@next/swc-win32-x64-msvc@npm:15.4.2":
-  version: 15.4.2
-  resolution: "@next/swc-win32-x64-msvc@npm:15.4.2"
+"@next/swc-win32-x64-msvc@npm:15.4.4":
+  version: 15.4.4
+  resolution: "@next/swc-win32-x64-msvc@npm:15.4.4"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
@@ -1050,11 +1050,11 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*, @types/node@npm:^24.0.15":
-  version: 24.0.15
-  resolution: "@types/node@npm:24.0.15"
+  version: 24.1.0
+  resolution: "@types/node@npm:24.1.0"
   dependencies:
     undici-types: "npm:~7.8.0"
-  checksum: 10c0/39ead0c0ff25dde29357630b5eaa7dd73cf3af796dbd0f01ed439a8af01cbddfa6b68aa9d67fb3243962836170a4463ff856c47fa822250c585987f707eb42b3
+  checksum: 10c0/6c4686bc144f6ce7bffd4cadc3e1196e2217c1da4c639c637213719c8a3ee58b6c596b994befcbffeacd9d9eb0c3bff6529d2bc27da5d1cb9d58b1da0056f9f4
   languageName: node
   linkType: hard
 
@@ -1414,10 +1414,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/build-utils@npm:10.6.7":
-  version: 10.6.7
-  resolution: "@vercel/build-utils@npm:10.6.7"
-  checksum: 10c0/507aad4cf65481fa5d599ec5061c9fbc1c823f934e050b960d8c14486b42548c44b279893b1466cbbbb8afe38ad89994429df685bf60944fa405d1c2b4bee547
+"@vercel/build-utils@npm:11.0.0":
+  version: 11.0.0
+  resolution: "@vercel/build-utils@npm:11.0.0"
+  checksum: 10c0/1ec99b5eeae0c9f009f1f8d247593f68a59740e854d672f5f1373db86ad2565933110fc161d9521c0dc4051e3acc27e572e258ffb7824e59717d83e781748280
   languageName: node
   linkType: hard
 
@@ -1463,16 +1463,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/gatsby-plugin-vercel-builder@npm:2.0.90":
-  version: 2.0.90
-  resolution: "@vercel/gatsby-plugin-vercel-builder@npm:2.0.90"
+"@vercel/gatsby-plugin-vercel-builder@npm:2.0.91":
+  version: 2.0.91
+  resolution: "@vercel/gatsby-plugin-vercel-builder@npm:2.0.91"
   dependencies:
     "@sinclair/typebox": "npm:0.25.24"
-    "@vercel/build-utils": "npm:10.6.7"
+    "@vercel/build-utils": "npm:11.0.0"
     esbuild: "npm:0.14.47"
     etag: "npm:1.8.1"
     fs-extra: "npm:11.1.0"
-  checksum: 10c0/eed3e369121ac8e93d785ec02b1e0e80113d442c221d3e9f0cf67b9ea9c3ee8d87f315902701ab0eabf56c7b0f666a25fd8c5de80674d42cfa283b4a4d1cf88b
+  checksum: 10c0/51150972b6fc6151e989f7e8d14a4f0f589faf0d3e56f317987190ceb416164ecaf5707bbf81d3817e9df24b8f0ae55c9a34271925863dfec668290da65d7431
   languageName: node
   linkType: hard
 
@@ -1480,6 +1480,17 @@ __metadata:
   version: 3.2.2
   resolution: "@vercel/go@npm:3.2.2"
   checksum: 10c0/45a261aca504b2c1843855eab9bbf11c0ccd696fd22d5421fabeca1d6892676c3810cfb75ab53491c66d4c97aa6c68d84d6105a15f9d38a1b98507dfa0f92b0e
+  languageName: node
+  linkType: hard
+
+"@vercel/hono@npm:0.0.4":
+  version: 0.0.4
+  resolution: "@vercel/hono@npm:0.0.4"
+  dependencies:
+    "@vercel/node": "npm:5.3.7"
+    "@vercel/static-config": "npm:3.1.1"
+    ts-morph: "npm:12.0.0"
+  checksum: 10c0/08c732b514bd852b22692c86d33361c2d1f0995ce98c4cca0078023f859decf5c0b520beadc391587e40d8d99bb004253b3331ee4a44f6b8627a07de97b7bb7e
   languageName: node
   linkType: hard
 
@@ -1493,12 +1504,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/next@npm:4.10.2":
-  version: 4.10.2
-  resolution: "@vercel/next@npm:4.10.2"
+"@vercel/next@npm:4.10.8":
+  version: 4.10.8
+  resolution: "@vercel/next@npm:4.10.8"
   dependencies:
     "@vercel/nft": "npm:0.29.2"
-  checksum: 10c0/1f1f74c70de1721782bd4b24e48e06a360a2825507173801dc1f50974e49f6f78a5b3fd957ee10bfa4dda9da7ddcb581c4e4feba556d1fadcd35c809e3158076
+  checksum: 10c0/1221a8e8d2db4dcaaea3fc113d07e4f93b8820fab1236a83c65180923b2b732f00895017092bbd632df28e083c59c03fd637bedb76b0450a846b76207a34969a
   languageName: node
   linkType: hard
 
@@ -1524,15 +1535,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/node@npm:5.3.6":
-  version: 5.3.6
-  resolution: "@vercel/node@npm:5.3.6"
+"@vercel/node@npm:5.3.7":
+  version: 5.3.7
+  resolution: "@vercel/node@npm:5.3.7"
   dependencies:
     "@edge-runtime/node-utils": "npm:2.3.0"
     "@edge-runtime/primitives": "npm:4.1.0"
     "@edge-runtime/vm": "npm:3.2.0"
     "@types/node": "npm:16.18.11"
-    "@vercel/build-utils": "npm:10.6.7"
+    "@vercel/build-utils": "npm:11.0.0"
     "@vercel/error-utils": "npm:2.0.3"
     "@vercel/nft": "npm:0.29.2"
     "@vercel/static-config": "npm:3.1.1"
@@ -1549,14 +1560,14 @@ __metadata:
     ts-node: "npm:10.9.1"
     typescript: "npm:4.9.5"
     undici: "npm:5.28.4"
-  checksum: 10c0/80090518c1a7f0eae6ee107af9cd1b4eb4db467f79782b5f4ec3698cd717fbb2702ab22f870d7f97c4f66c010227858537b805e25afdd53775511a40ae616f15
+  checksum: 10c0/568be4445ac3070014dc514eb5eac3eaa98b9cd3f70dab177dc216b1effb90c314685cbe57448b9047d95334aaf7d0b52672386b45e4c9aa086cbcedb181265e
   languageName: node
   linkType: hard
 
-"@vercel/python@npm:4.7.4":
-  version: 4.7.4
-  resolution: "@vercel/python@npm:4.7.4"
-  checksum: 10c0/545f3edb7069a317c42e652d752039bbd17d9ac0b70b8736d7eba73c8a747d01e9187b7672d548bbb2be270c06f028d14a0b06d72a7489cee0d5cbb42333859a
+"@vercel/python@npm:4.8.0":
+  version: 4.8.0
+  resolution: "@vercel/python@npm:4.8.0"
+  checksum: 10c0/2d1ae84ef643b0699b6bc385275ec401924f035c518689c599b1cf9f448c381b36b2493d9568d4f984d98ec77a3db304d764473768b7cb123aeaea852fe58da0
   languageName: node
   linkType: hard
 
@@ -1593,15 +1604,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/static-build@npm:2.7.16":
-  version: 2.7.16
-  resolution: "@vercel/static-build@npm:2.7.16"
+"@vercel/static-build@npm:2.7.17":
+  version: 2.7.17
+  resolution: "@vercel/static-build@npm:2.7.17"
   dependencies:
     "@vercel/gatsby-plugin-vercel-analytics": "npm:1.0.11"
-    "@vercel/gatsby-plugin-vercel-builder": "npm:2.0.90"
+    "@vercel/gatsby-plugin-vercel-builder": "npm:2.0.91"
     "@vercel/static-config": "npm:3.1.1"
     ts-morph: "npm:12.0.0"
-  checksum: 10c0/fde5e981faec4b0b994eaab1ce90c0218ec22e273f62da4017af59e6255e9f36e560c01e60014b640b74157df32798bfff6999389efb25a7d2fc0d0023db29d1
+  checksum: 10c0/2a5499b4dc78768475d0ff7b691fae6aae58c35d23774d3f33ab70bb3c1dd154b8102940bb90abe73e5f88104bdfd28c6f84e759251078726c43b92f081f5c9f
   languageName: node
   linkType: hard
 
@@ -2718,9 +2729,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.173":
-  version: 1.5.189
-  resolution: "electron-to-chromium@npm:1.5.189"
-  checksum: 10c0/53e43a5ad26636eae04f273d65ca4ca5b8f3084690e08caeef34fddf4ed6d16c076d7ceb5feaec36ac4979f250a5a70b13b5c0a33111f89af7b3cd529b751b3f
+  version: 1.5.191
+  resolution: "electron-to-chromium@npm:1.5.191"
+  checksum: 10c0/26b22ec2ae2a152da09f062d8582e54384a15ddc2a27149cdc2747a0c3f46154370a37b9e687de2d6d71ea1ebc1319f8394283ffb1581f1d4495cdefffd7a2a6
   languageName: node
   linkType: hard
 
@@ -3168,10 +3179,10 @@ __metadata:
   linkType: hard
 
 "eslint-config-next@npm:^15.4.2":
-  version: 15.4.2
-  resolution: "eslint-config-next@npm:15.4.2"
+  version: 15.4.4
+  resolution: "eslint-config-next@npm:15.4.4"
   dependencies:
-    "@next/eslint-plugin-next": "npm:15.4.2"
+    "@next/eslint-plugin-next": "npm:15.4.4"
     "@rushstack/eslint-patch": "npm:^1.10.3"
     "@typescript-eslint/eslint-plugin": "npm:^5.4.2 || ^6.0.0 || ^7.0.0 || ^8.0.0"
     "@typescript-eslint/parser": "npm:^5.4.2 || ^6.0.0 || ^7.0.0 || ^8.0.0"
@@ -3187,7 +3198,7 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 10c0/c42723d1f61a645df0955dd58d0763fcf6b26dae317eec13b65748bf76067d37d6536a1484b722279fd21d99026d39e7fc05b6da6d4e4fe6f8e9daa436d51515
+  checksum: 10c0/bc7b288b5f7cb338d2af7dbba9403e0e0b3264d72626bd2e5198321dd208d999450d0f4188fb7f09326f071137c7e8c41cd0826312024611ef4222423a6ebe9d
   languageName: node
   linkType: hard
 
@@ -3385,8 +3396,8 @@ __metadata:
   linkType: hard
 
 "eslint@npm:^9.31.0":
-  version: 9.31.0
-  resolution: "eslint@npm:9.31.0"
+  version: 9.32.0
+  resolution: "eslint@npm:9.32.0"
   dependencies:
     "@eslint-community/eslint-utils": "npm:^4.2.0"
     "@eslint-community/regexpp": "npm:^4.12.1"
@@ -3394,8 +3405,8 @@ __metadata:
     "@eslint/config-helpers": "npm:^0.3.0"
     "@eslint/core": "npm:^0.15.0"
     "@eslint/eslintrc": "npm:^3.3.1"
-    "@eslint/js": "npm:9.31.0"
-    "@eslint/plugin-kit": "npm:^0.3.1"
+    "@eslint/js": "npm:9.32.0"
+    "@eslint/plugin-kit": "npm:^0.3.4"
     "@humanfs/node": "npm:^0.16.6"
     "@humanwhocodes/module-importer": "npm:^1.0.1"
     "@humanwhocodes/retry": "npm:^0.4.2"
@@ -3430,7 +3441,7 @@ __metadata:
       optional: true
   bin:
     eslint: bin/eslint.js
-  checksum: 10c0/3fd1cd5b38b907ecb3f5e7537ab91204efb38bc1ad0ca6e46fc4112f13b594272ff56e641b41580049bc333fbcb5b1b99ca9a542e8406e7da5e951068cbaec77
+  checksum: 10c0/e8a23924ec5f8b62e95483002ca25db74e25c23bd9c6d98a9f656ee32f820169bee3bfdf548ec728b16694f198b3db857d85a49210ee4a035242711d08fdc602
   languageName: node
   linkType: hard
 
@@ -4617,11 +4628,11 @@ __metadata:
   linkType: hard
 
 "jiti@npm:^2.4.1, jiti@npm:^2.4.2":
-  version: 2.4.2
-  resolution: "jiti@npm:2.4.2"
+  version: 2.5.1
+  resolution: "jiti@npm:2.5.1"
   bin:
     jiti: lib/jiti-cli.mjs
-  checksum: 10c0/4ceac133a08c8faff7eac84aabb917e85e8257f5ad659e843004ce76e981c457c390a220881748ac67ba1b940b9b729b30fb85cbaf6e7989f04b6002c94da331
+  checksum: 10c0/f0a38d7d8842cb35ffe883038166aa2d52ffd21f1a4fc839ae4076ea7301c22a1f11373f8fc52e2667de7acde8f3e092835620dd6f72a0fbe9296b268b0874bb
   languageName: node
   linkType: hard
 
@@ -5297,19 +5308,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next@npm:^15.4.2":
-  version: 15.4.2
-  resolution: "next@npm:15.4.2"
+"next@npm:^15.4.4":
+  version: 15.4.4
+  resolution: "next@npm:15.4.4"
   dependencies:
-    "@next/env": "npm:15.4.2"
-    "@next/swc-darwin-arm64": "npm:15.4.2"
-    "@next/swc-darwin-x64": "npm:15.4.2"
-    "@next/swc-linux-arm64-gnu": "npm:15.4.2"
-    "@next/swc-linux-arm64-musl": "npm:15.4.2"
-    "@next/swc-linux-x64-gnu": "npm:15.4.2"
-    "@next/swc-linux-x64-musl": "npm:15.4.2"
-    "@next/swc-win32-arm64-msvc": "npm:15.4.2"
-    "@next/swc-win32-x64-msvc": "npm:15.4.2"
+    "@next/env": "npm:15.4.4"
+    "@next/swc-darwin-arm64": "npm:15.4.4"
+    "@next/swc-darwin-x64": "npm:15.4.4"
+    "@next/swc-linux-arm64-gnu": "npm:15.4.4"
+    "@next/swc-linux-arm64-musl": "npm:15.4.4"
+    "@next/swc-linux-x64-gnu": "npm:15.4.4"
+    "@next/swc-linux-x64-musl": "npm:15.4.4"
+    "@next/swc-win32-arm64-msvc": "npm:15.4.4"
+    "@next/swc-win32-x64-msvc": "npm:15.4.4"
     "@swc/helpers": "npm:0.5.15"
     caniuse-lite: "npm:^1.0.30001579"
     postcss: "npm:8.4.31"
@@ -5352,7 +5363,7 @@ __metadata:
       optional: true
   bin:
     next: dist/bin/next
-  checksum: 10c0/eac6b27e480b45c0441b18d3c1cadf0373847e407e8b032e1d72f87bd22642fbc31b7a9ba99a7d3cbb3e37d1cadc4e5999b0c14844aa6d3e0be6f7291dfe96b0
+  checksum: 10c0/b81c7c1270dbefa8e1e77d0fadc7368569d381190d00b45f647fe792337f93e3f7a188ff64813fe4c1f6d254e83306047d254967adc192c40561c46a28023d51
   languageName: node
   linkType: hard
 
@@ -6543,7 +6554,7 @@ __metadata:
     eslint-plugin-react-hooks: "npm:^5.2.0"
     husky: "npm:^9.1.7"
     lint-staged: "npm:^16.1.2"
-    next: "npm:^15.4.2"
+    next: "npm:^15.4.4"
     postcss: "npm:^8.5.6"
     prettier: "npm:^3.6.2"
     react: "npm:^19.1.0"
@@ -7302,27 +7313,28 @@ __metadata:
   linkType: hard
 
 "vercel@npm:^44.5.0":
-  version: 44.5.0
-  resolution: "vercel@npm:44.5.0"
+  version: 44.6.3
+  resolution: "vercel@npm:44.6.3"
   dependencies:
     "@vercel/blob": "npm:1.0.2"
-    "@vercel/build-utils": "npm:10.6.7"
+    "@vercel/build-utils": "npm:11.0.0"
     "@vercel/fun": "npm:1.1.6"
     "@vercel/go": "npm:3.2.2"
+    "@vercel/hono": "npm:0.0.4"
     "@vercel/hydrogen": "npm:1.2.3"
-    "@vercel/next": "npm:4.10.2"
-    "@vercel/node": "npm:5.3.6"
-    "@vercel/python": "npm:4.7.4"
+    "@vercel/next": "npm:4.10.8"
+    "@vercel/node": "npm:5.3.7"
+    "@vercel/python": "npm:4.8.0"
     "@vercel/redwood": "npm:2.3.4"
     "@vercel/remix-builder": "npm:5.4.10"
     "@vercel/ruby": "npm:2.2.1"
-    "@vercel/static-build": "npm:2.7.16"
+    "@vercel/static-build": "npm:2.7.17"
     chokidar: "npm:4.0.0"
     jose: "npm:5.9.6"
   bin:
     vc: dist/vc.js
     vercel: dist/vc.js
-  checksum: 10c0/cb720e122e3cb82c9a4ce1a5f4b2cf50387f951a57c2f3ef801955fcce2608d97b2697f6acf24d5ae9ba563c3e2e51fce84422e9d59aec249cb917c7a3fcf664
+  checksum: 10c0/eb39fa09def25699073ae7b449356972369bff949d3d9dd09e6d6abab421c7a46f4fb93b433b329454bf2001e23c2765f8cc61f88e5b92a22ef7ddbb29f34d3b
   languageName: node
   linkType: hard
 
