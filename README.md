@@ -22,3 +22,7 @@ settings as:
 2. `SPOTIFY_CLIENT_SECRET`
 3. `SPOTIFY_REFRESH_TOKEN`.
 
+
+## Credits
+
+Geologica Font downloaded from [Google Fonts](https://fonts.google.com/specimen/Geologica)
