@@ -1,26 +1,19 @@
-import { dirname } from 'path';
-import { fileURLToPath } from 'url';
-import { FlatCompat } from '@eslint/eslintrc';
-import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
-import { includeIgnoreFile } from '@eslint/compat';
+import { defineConfig, globalIgnores } from 'eslint/config'
+import nextVitals from 'eslint-config-next/core-web-vitals'
+import prettier from 'eslint-config-prettier/flat'
 
-import path from 'node:path';
+const eslintConfig = defineConfig([
+  ...nextVitals,
+  prettier,
+  // Override default ignores of eslint-config-next.
+  globalIgnores([
+    // Default ignores of eslint-config-next:
+    '.next/**',
+    '.yarn/**',
+    'out/**',
+    'build/**',
+    'next-env.d.ts',
+  ]),
+])
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-const gitignorePath = path.resolve(__dirname, '.gitignore');
-
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-});
-
-const eslintConfig = [
-  {
-    ignores: ['.yarn/'],
-  },
-  includeIgnoreFile(gitignorePath),
-  ...compat.extends('next/core-web-vitals', 'next/typescript'),
-  eslintPluginPrettierRecommended,
-];
-
-export default eslintConfig;
+export default eslintConfig
