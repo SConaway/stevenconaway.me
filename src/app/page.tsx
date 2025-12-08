@@ -139,7 +139,7 @@ export default function Index() {
               In the past, I have co-developed an{' '}
               <a href="https://canvas.howard.edu/courses/47629/pages/lecture-notes-and-schedule">
                 advanced chip design curriculum at Howard University
-              </a>{' '}
+              </a>
               , supported student tapeouts, and coordinated EDA tools with
               industry partners. At Notre Dame, I served as a Teaching Assistant
               across multiple engineering courses—from digital logic to systems
