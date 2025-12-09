@@ -135,7 +135,7 @@ export default function Index() {
 
             <hr className="my-6" />
 
-            <p className="mt-2">
+            <p className="mt-2 text-justify">
               In the past, I have co-developed an{' '}
               <a
                 href="https://canvas.howard.edu/courses/47629/pages/lecture-notes-and-schedule"
