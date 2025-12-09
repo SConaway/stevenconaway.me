@@ -128,7 +128,7 @@ export default function Index() {
 
             <hr className="my-6" />
 
-            <p>
+            <p className="text-center">
               Currently, I am working as an Application Engineer at Cadence
               Design Systems.
             </p>
@@ -137,7 +137,10 @@ export default function Index() {
 
             <p className="mt-2">
               In the past, I have co-developed an{' '}
-              <a href="https://canvas.howard.edu/courses/47629/pages/lecture-notes-and-schedule">
+              <a
+                href="https://canvas.howard.edu/courses/47629/pages/lecture-notes-and-schedule"
+                className="underline transition-colors underline-offset-2 decoration-zinc-200 hover:decoration-zinc-400 hover:text-zinc-400"
+              >
                 advanced chip design curriculum at Howard University
               </a>
               , supported student tapeouts, and coordinated EDA tools with
@@ -155,7 +158,7 @@ export default function Index() {
             <hr className="my-6" />
 
             <p className="mt-4 text-center">
-              For full details, visit my{' '}
+              For more details, visit my{' '}
               <a
                 href="https://www.linkedin.com/in/steven_conaway"
                 className="underline transition-colors underline-offset-2 decoration-zinc-200 hover:decoration-zinc-400 hover:text-zinc-400"
